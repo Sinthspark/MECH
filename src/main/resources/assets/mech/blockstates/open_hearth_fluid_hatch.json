@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "facing=north": { "model": "mech:block/open_hearth_fluid_hatch" },
+    "facing=south": { "model": "mech:block/open_hearth_fluid_hatch", "y": 180 },
+    "facing=west":  { "model": "mech:block/open_hearth_fluid_hatch", "y": 270 },
+    "facing=east":  { "model": "mech:block/open_hearth_fluid_hatch", "y": 90 },
+    "facing=up": { "model": "mech:block/open_hearth_fluid_hatch", "x": 270},
+    "facing=down": { "model": "mech:block/open_hearth_fluid_hatch", "x": 90}
+  }
+}

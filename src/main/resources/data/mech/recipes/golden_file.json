@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " F ",
+    " F ",
+    " S "
+  ],
+  "key": {
+    "F": {"item": "mech:golden_plate"},
+    "S": {"item": "minecraft:stick"}
+  },
+  "result": {
+    "item": "mech:golden_file",
+    "count": 1
+  }
+}

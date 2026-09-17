@@ -1,0 +1,24 @@
+{
+  "display": {
+    "icon": { "item": "mech:bronze_brick_casing" },
+    "title": { "translate": "advancements.mech.kinetic.brick_bronze_casing.title" },
+    "description": { "translate": "advancements.mech.kinetic.brick_bronze_casing.description" },
+    "frame": "goal", "show_toast": true, "announce_to_chat": true, "hidden": false
+  },
+  "parent": "mech:kinetic/bricks",
+  "criteria": {
+    "has_casing": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": { "items": [{ "items": ["mech:bronze_brick_casing"] }] }
+    },
+    "has_plate": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": { "items": [{ "items": ["mech:bronze_plate"] }] }
+    },
+    "has_any_wrench": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": { "items": [{ "tag": "mech:wrenches" }] }
+    }
+  },
+  "requirements": [["has_casing"], ["has_plate"], ["has_any_wrench"]]
+}

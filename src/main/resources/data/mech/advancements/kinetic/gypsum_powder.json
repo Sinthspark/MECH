@@ -1,0 +1,16 @@
+{
+  "display": {
+    "icon": { "item": "mech:gypsum_powder" },
+    "title": { "translate": "advancements.mech.kinetic.gypsum_powder.title" },
+    "description": { "translate": "advancements.mech.kinetic.gypsum_powder.description" },
+    "frame": "task", "show_toast": true, "announce_to_chat": true, "hidden": false
+  },
+  "parent": "mech:kinetic/gypsum_stone",
+  "criteria": {
+    "has_gypsum_powder": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": { "items": [{ "items": ["mech:gypsum_powder"] }] }
+    }
+  },
+  "requirements": [["has_gypsum_powder"]]
+}

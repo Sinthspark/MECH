@@ -1,0 +1,20 @@
+{
+  "display": {
+    "icon": { "item": "mech:bronze_plate" },
+    "title": { "translate": "advancements.mech.kinetic.bronze_plate.title" },
+    "description": { "translate": "advancements.mech.kinetic.bronze_plate.description" },
+    "frame": "task", "show_toast": true, "announce_to_chat": true, "hidden": false
+  },
+  "parent": "mech:kinetic/press",
+  "criteria": {
+    "has_bronze_plate": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": { "items": [{ "items": ["mech:bronze_plate"] }] }
+    },
+    "has_bronze_ingot": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": { "items": [{ "items": ["mech:bronze_ingot"] }] }
+    }
+  },
+  "requirements": [["has_bronze_plate"], ["has_bronze_ingot"]]
+}

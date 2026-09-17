@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "RIR",
+    "RRR",
+    " R "
+  ],
+  "key": {
+    "R": {"item": "mech:tin_plate"},
+    "I": {"tag": "mech:hammers"}
+  },
+  "result": {
+    "item": "mech:tin_wrench",
+    "count": 1
+  }
+}

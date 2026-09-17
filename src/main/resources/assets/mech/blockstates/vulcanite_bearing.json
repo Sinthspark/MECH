@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=south": { "model": "mech:block/vulcanite_bearing" },
+    "facing=north": { "model": "mech:block/vulcanite_bearing", "y": 180 },
+    "facing=west":  { "model": "mech:block/vulcanite_bearing", "y": 90 },
+    "facing=east":  { "model": "mech:block/vulcanite_bearing", "y": 270 }
+  }
+}

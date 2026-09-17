@@ -1,0 +1,10 @@
+{
+  "type": "mech:alloying",
+  "ingredients": [
+    {"item": "mech:copper_dust", "count": 1},
+    {"item": "mech:tellurium", "count": 2}
+  ],
+  "result": {"item": "mech:vulcanite_ingot", "count": 3},
+  "steam": 6000,
+  "time": 1200
+}

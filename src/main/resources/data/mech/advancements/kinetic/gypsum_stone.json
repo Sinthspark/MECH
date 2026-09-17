@@ -1,0 +1,16 @@
+{
+  "display": {
+    "icon": { "item": "mech:gypsum_stone" },
+    "title": { "translate": "advancements.mech.kinetic.gypsum_stone.title" },
+    "description": { "translate": "advancements.mech.kinetic.gypsum_stone.description" },
+    "frame": "task", "show_toast": true, "announce_to_chat": true, "hidden": false
+  },
+  "parent": "mech:root",
+  "criteria": {
+    "has_gypsum": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": { "items": [{ "items": ["mech:gypsum_stone"] }] }
+    }
+  },
+  "requirements": [["has_gypsum"]]
+}

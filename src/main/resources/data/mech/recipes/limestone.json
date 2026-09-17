@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "FF",
+    "FF"
+  ],
+  "key": {
+    "F": {"item": "mech:limestone_chunk"}
+  },
+  "result": {
+    "item": "mech:limestone",
+    "count": 1
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "display": {
+    "icon": { "item": "mech:wheel_arc_with_stick" },
+    "title": { "translate": "advancements.mech.kinetic.wheel_parts.title" },
+    "description": { "translate": "advancements.mech.kinetic.wheel_parts.description" },
+    "frame": "task", "show_toast": true, "announce_to_chat": true, "hidden": false
+  },
+  "parent": "mech:kinetic/sawmill",
+  "criteria": {
+    "has_arc_with_stick": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": { "items": [{ "items": ["mech:wheel_arc_with_stick"] }] }
+    },
+    "has_arc_without_stick": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": { "items": [{ "items": ["mech:wheel_arc_without_stick"] }] }
+    }
+  },
+  "requirements": [["has_arc_with_stick"], ["has_arc_without_stick"]]
+}

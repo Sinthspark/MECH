@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " F ",
+    "AFA",
+    "AAA"
+  ],
+  "key": {
+    "F": {"item": "mech:bronze_ingot"},
+    "A": {"item": "minecraft:stone"}
+  },
+  "result": {
+    "item": "mech:bronze_mortar",
+    "count": 1
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {"item": "mech:tellurium"},
+    {"tag": "mech:mortars"}
+  ],
+  "result": {
+    "item": "mech:tellurium_dust",
+    "count": 1
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " B ",
+    "ABA",
+    "AAA"
+  ],
+  "key": {
+    "A": {"item": "minecraft:stone"},
+    "B": {"item": "minecraft:gold_ingot"}
+  },
+  "result": {
+    "item": "mech:golden_mortar",
+    "count": 1
+  }
+}

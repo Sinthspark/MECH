@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    " A ",
+    "CFB"
+  ],
+  "key": {
+    "F": {"item": "mech:bronze_plate"},
+    "A": {"tag": "mech:files"},
+    "B": {"tag": "mech:hammers"},
+    "C": {"tag": "mech:wire_cutters"}
+  },
+  "result": {
+    "item": "mech:bronze_circular_saw_blade",
+    "count": 1
+  }
+}

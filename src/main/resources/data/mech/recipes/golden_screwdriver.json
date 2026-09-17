@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "FA",
+    "BS"
+  ],
+  "key": {
+    "F": {"tag": "mech:hammers"},
+    "S": {"tag": "mech:files"},
+    "A": {"item": "mech:golden_rod"},
+    "B": {"item": "minecraft:stick"}
+  },
+  "result": {
+    "item": "mech:golden_screwdriver",
+    "count": 1
+  }
+}

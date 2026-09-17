@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "IF",
+    " R"
+  ],
+  "key": {
+    "R": {"item": "mech:tin_rod"},
+    "I": {"tag": "mech:hammers"},
+    "F": {"tag": "mech:files"}
+  },
+  "result": {
+    "item": "mech:tin_ring",
+    "count": 1
+  }
+}

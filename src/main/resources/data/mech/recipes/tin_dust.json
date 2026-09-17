@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {"tag": "mech:mortars"},
+    {"item": "mech:tin_ingot"}
+  ],
+  "result": {
+    "item": "mech:tin_dust",
+    "count": 1
+  }
+}

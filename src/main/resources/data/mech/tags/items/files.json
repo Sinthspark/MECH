@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "mech:iron_file",
+    "mech:golden_file",
+    "mech:copper_file",
+    "mech:tin_file",
+    "mech:bronze_file",
+    "mech:cast_iron_file",
+    "mech:steel_file"
+  ]
+}

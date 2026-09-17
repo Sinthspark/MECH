@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "IFI",
+    " S ",
+    "RDR"
+  ],
+  "key": {
+    "R": {"item": "mech:tin_rod"},
+    "I": {"item": "mech:tin_plate"},
+    "F": {"tag": "mech:files"},
+    "S": {"item": "mech:tin_screw"},
+    "D": {"tag": "mech:screwdrivers"}
+  },
+  "result": {
+    "item": "mech:tin_wire_cutters",
+    "count": 1
+  }
+}

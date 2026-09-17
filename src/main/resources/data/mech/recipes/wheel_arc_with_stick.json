@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {"item": "mech:wheel_arc_without_stick"},
+    {"item": "minecraft:stick"}
+  ],
+  "result": {
+    "item": "mech:wheel_arc_with_stick",
+    "count": 1
+  }
+}

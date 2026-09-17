@@ -1,0 +1,8 @@
+{
+  "type": "mech:grinding",
+  "ingredient": {"item": "minecraft:sugar_cane"},
+  "result": {"item": "minecraft:sugar"},
+  "count": 1,
+  "steam": 3000,
+  "time": 600
+}

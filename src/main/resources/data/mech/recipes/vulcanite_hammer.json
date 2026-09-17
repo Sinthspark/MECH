@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "AA ",
+    "AAS",
+    "AA "
+  ],
+  "key": {
+    "A": {"item": "mech:vulcanite_ingot"},
+    "S": {"item": "minecraft:stick"}
+  },
+  "result": {
+    "item": "mech:vulcanite_hammer",
+    "count": 1
+  }
+}

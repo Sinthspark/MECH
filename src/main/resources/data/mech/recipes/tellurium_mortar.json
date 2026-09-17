@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " F ",
+    "SFS",
+    "SSS"
+  ],
+  "key": {
+    "F": {"item": "mech:tellurium"},
+    "S": {"item": "minecraft:stone"}
+  },
+  "result": {
+    "item": "mech:tellurium_mortar",
+    "count": 1
+  }
+}

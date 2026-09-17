@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "IS",
+    "RF"
+  ],
+  "key": {
+    "R": {"item": "minecraft:stick"},
+    "I": {"tag": "mech:hammers"},
+    "F": {"tag": "mech:files"},
+    "S": {"item": "mech:tin_rod"}
+  },
+  "result": {
+    "item": "mech:tin_screwdriver",
+    "count": 1
+  }
+}

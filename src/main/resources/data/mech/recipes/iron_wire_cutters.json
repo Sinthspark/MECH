@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "IFI",
+    " S ",
+    "RDR"
+  ],
+  "key": {
+    "R": {"item": "mech:iron_rod"},
+    "I": {"item": "mech:iron_plate"},
+    "F": {"tag": "mech:files"},
+    "S": {"item": "mech:iron_screw"},
+    "D": {"tag": "mech:screwdrivers"}
+  },
+  "result": {
+    "item": "mech:iron_wire_cutters",
+    "count": 1
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {"item": "minecraft:sand"},
+    {"tag": "mech:mortars"}
+  ],
+  "result": {
+    "item": "mech:sand_dust",
+    "count": 1
+  }
+}

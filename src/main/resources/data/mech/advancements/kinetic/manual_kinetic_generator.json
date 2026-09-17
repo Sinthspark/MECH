@@ -1,0 +1,37 @@
+{
+  "display": {
+    "icon": {
+      "item": "mech:manual_kinetic_generator"
+    },
+    "title": {
+      "translate": "advancements.mech.kinetic.manual_kinetic_generator.title"
+    },
+    "description": {
+      "translate": "advancements.mech.kinetic.manual_kinetic_generator.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "mech:kinetic/vulcanite_gear",
+  "criteria": {
+    "has_manual_kinetic_generator": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "mech:manual_kinetic_generator"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_manual_kinetic_generator"
+    ]
+  ]
+}

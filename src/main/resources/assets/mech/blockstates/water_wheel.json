@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=west": { "model": "mech:block/water_wheel" },
+    "facing=south": { "model": "mech:block/water_wheel", "y": 270 },
+    "facing=east": { "model": "mech:block/water_wheel", "y": 180 },
+    "facing=north": { "model": "mech:block/water_wheel", "y": 90 }
+  }
+}

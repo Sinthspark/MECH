@@ -1,0 +1,11 @@
+{
+  "type": "mech:milling",
+  "ingredient": {
+    "item": "minecraft:gold_ore"
+  },
+  "result": {
+    "item": "mech:golden_dust",
+    "count": 2
+  },
+  "cookingtime": 1800
+}

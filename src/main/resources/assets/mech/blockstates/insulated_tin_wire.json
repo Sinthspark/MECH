@@ -1,0 +1,115 @@
+{
+  "multipart": [
+    {
+      "when": {
+        "north": false, "south": false, "east": false,
+        "west": false, "up": false, "down": false
+      },
+      "apply": {"model": "mech:block/insulated_wire_center"}
+    },
+
+    {"when": {"north": true}, "apply": {"model": "mech:block/insulated_tin_wire_side", "y": 0}},
+    {"when": {"south": true}, "apply": {"model": "mech:block/insulated_tin_wire_side", "y": 180}},
+    {"when": {"east": true}, "apply": {"model": "mech:block/insulated_tin_wire_side", "y": 90}},
+    {"when": {"west": true}, "apply": {"model": "mech:block/insulated_tin_wire_side", "y": 270}},
+    {"when": {"up": true}, "apply": {"model": "mech:block/insulated_tin_wire_side", "x": 270}},
+    {"when": {"down": true}, "apply": {"model": "mech:block/insulated_tin_wire_side", "x": 90}},
+
+    {
+      "when": {"north": true, "south": false, "east": true},
+      "apply": {"model": "mech:block/insulated_wire_cap"}
+    },
+    {
+      "when": {"north": true, "south": false, "west": true},
+      "apply": {"model": "mech:block/insulated_wire_cap"}
+    },
+    {
+      "when": {"north": true, "south": false, "up": true},
+      "apply": {"model": "mech:block/insulated_wire_cap"}
+    },
+    {
+      "when": {"north": true, "south": false, "down": true},
+      "apply": {"model": "mech:block/insulated_wire_cap"}
+    },
+    {
+      "when": {"south": true, "north": false, "east": true},
+      "apply": {"model": "mech:block/insulated_wire_cap", "y":  180}
+    },
+    {
+      "when": {"south": true, "north": false, "west": true},
+      "apply": {"model": "mech:block/insulated_wire_cap", "y":  180}
+    },
+    {
+      "when": {"south": true, "north": false, "up": true},
+      "apply": {"model": "mech:block/insulated_wire_cap", "y":  180}
+    },
+    {
+      "when": {"south": true, "north": false, "down": true},
+      "apply": {"model": "mech:block/insulated_wire_cap", "y":  180}
+    },
+    {
+      "when": {"east": true, "west": false, "north": true},
+      "apply": {"model": "mech:block/insulated_wire_cap", "y":  90}
+    },
+    {
+      "when": {"east": true, "west": false, "south": true},
+      "apply": {"model": "mech:block/insulated_wire_cap", "y":  90}
+    },
+    {
+      "when": {"east": true, "west": false, "up": true},
+      "apply": {"model": "mech:block/insulated_wire_cap", "y":  90}
+    },
+    {
+      "when": {"east": true, "west": false, "down": true},
+      "apply": {"model": "mech:block/insulated_wire_cap", "y":  90}
+    },
+    {
+      "when": {"west": true, "east": false, "north": true},
+      "apply": {"model": "mech:block/insulated_wire_cap", "y": 270}
+    },
+    {
+      "when": {"west": true, "east": false, "south": true},
+      "apply": {"model": "mech:block/insulated_wire_cap", "y": 270}
+    },
+    {
+      "when": {"west": true, "east": false, "up": true},
+      "apply": {"model": "mech:block/insulated_wire_cap", "y": 270}
+    },
+    {
+      "when": {"west": true, "east": false, "down": true},
+      "apply": {"model": "mech:block/insulated_wire_cap", "y": 270}
+    },
+    {
+      "when": {"up": true, "down": false, "north": true},
+      "apply": {"model": "mech:block/insulated_wire_cap", "x": 270}
+    },
+    {
+      "when": {"up": true, "down": false, "south": true},
+      "apply": {"model": "mech:block/insulated_wire_cap", "x": 270}
+    },
+    {
+      "when": {"up": true, "down": false, "east": true},
+      "apply": {"model": "mech:block/insulated_wire_cap", "x": 270}
+    },
+    {
+      "when": {"up": true, "down": false, "west": true},
+      "apply": {"model": "mech:block/insulated_wire_cap", "x": 270}
+    },
+    {
+      "when": {"down": true, "up": false, "north": true},
+      "apply": {"model": "mech:block/insulated_wire_cap", "x": 90}
+    },
+    {
+      "when": {"down": true, "up": false, "south": true},
+      "apply": {"model": "mech:block/insulated_wire_cap", "x": 90}
+    },
+    {
+      "when": {"down": true, "up": false, "east": true},
+      "apply": {"model": "mech:block/insulated_wire_cap", "x": 90}
+    },
+    {
+      "when": {"down": true, "up": false, "west": true},
+      "apply": {"model": "mech:block/insulated_wire_cap", "x": 90}
+    }
+  ]
+}

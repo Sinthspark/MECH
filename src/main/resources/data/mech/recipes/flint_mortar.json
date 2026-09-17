@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " F ",
+    "SFS",
+    "SSS"
+  ],
+  "key": {
+    "F": {"item": "minecraft:flint"},
+    "S": {"item": "minecraft:stone"}
+  },
+  "result": {
+    "item": "mech:flint_mortar",
+    "count": 1
+  }
+}

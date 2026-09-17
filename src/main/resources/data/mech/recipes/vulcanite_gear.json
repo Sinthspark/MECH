@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " V ",
+    "VCV",
+    " V "
+  ],
+  "key": {
+    "V": {"item": "mech:vulcanite_ingot"},
+    "C": {"item": "minecraft:iron_ingot"}
+  },
+  "result": {
+    "item": "mech:vulcanite_gear",
+    "count": 2
+  }
+}

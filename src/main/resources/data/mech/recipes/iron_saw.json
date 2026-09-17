@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "  A",
+    " B ",
+    "   "
+  ],
+  "key": {
+    "A": {"item": "mech:iron_saw_blade"},
+    "B": {"item": "mech:wooden_ring"}
+  },
+  "result": {
+    "item": "mech:iron_saw",
+    "count": 1
+  }
+}

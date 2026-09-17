@@ -1,0 +1,8 @@
+{
+  "parent": "block/orientable",
+  "textures": {
+    "top": "mech:block/coke_oven_bricks",
+    "front": "mech:block/coke_oven_controller",
+    "side": "mech:block/coke_oven_bricks"
+  }
+}

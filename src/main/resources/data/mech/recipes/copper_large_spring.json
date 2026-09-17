@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " F ",
+    " A ",
+    " F "
+  ],
+  "key": {
+    "F": {"item": "mech:copper_spring"},
+    "A": {"tag": "mech:files"}
+  },
+  "result": {
+    "item": "mech:copper_large_spring",
+    "count": 1
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "mech:iron_wire_cutters",
+    "mech:golden_wire_cutters",
+    "mech:copper_wire_cutters",
+    "mech:tin_wire_cutters",
+    "mech:bronze_wire_cutters",
+    "mech:cast_iron_wire_cutters",
+    "mech:steel_wire_cutters"
+  ]
+}

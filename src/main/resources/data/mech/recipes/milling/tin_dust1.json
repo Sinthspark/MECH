@@ -1,0 +1,11 @@
+{
+  "type": "mech:milling",
+  "ingredient": {
+    "item": "mech:tin_ingot"
+  },
+  "result": {
+    "item": "mech:tin_dust",
+    "count": 1
+  },
+  "cookingtime": 1800
+}

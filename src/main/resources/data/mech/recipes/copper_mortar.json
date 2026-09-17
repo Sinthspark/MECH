@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " A ",
+    "FAF",
+    "FFF"
+  ],
+  "key": {
+    "F": {"item": "minecraft:stone"},
+    "A": {"item": "minecraft:copper_ingot"}
+  },
+  "result": {
+    "item": "mech:copper_mortar",
+    "count": 1
+  }
+}

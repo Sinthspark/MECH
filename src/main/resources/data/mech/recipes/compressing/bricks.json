@@ -1,0 +1,8 @@
+{
+  "type": "mech:compressing",
+  "ingredient": {"item": "minecraft:brick", "count": "8"},
+  "result": {"item": "minecraft:bricks"},
+  "count": 1,
+  "steam": 8400,
+  "time": 1200
+}

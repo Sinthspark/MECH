@@ -1,0 +1,16 @@
+{
+  "display": {
+    "icon": { "item": "mech:reductor" },
+    "title": { "text": "Редуктор" },
+    "description": { "text": "Соберите редуктор." },
+    "frame": "task", "show_toast": true, "announce_to_chat": true
+  },
+  "parent": "mech:kinetic/iron_gear",
+  "criteria": {
+    "has_reductor": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": { "items": [{ "items": ["mech:reductor"] }] }
+    }
+  },
+  "requirements": [["has_reductor"]]
+}

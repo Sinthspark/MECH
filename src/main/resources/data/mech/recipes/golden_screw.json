@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "IF",
+    " S"
+  ],
+  "key": {
+    "I": {"tag": "mech:saws"},
+    "F": {"tag": "mech:files"},
+    "S": {"item": "mech:golden_rod"}
+  },
+  "result": {
+    "item": "mech:golden_screw",
+    "count": 2
+  }
+}

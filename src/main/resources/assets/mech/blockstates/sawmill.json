@@ -1,0 +1,35 @@
+{
+  "variants": {
+    "facing=west": {
+      "model": "mech:block/sawmill",
+      "textures": {
+        "0": "mech:block/sawmill_rotating",
+        "1": "mech:block/sawmill"
+      }
+    },
+    "facing=east": {
+      "model": "mech:block/sawmill",
+      "y": 180,
+      "textures": {
+        "0": "mech:block/sawmill_rotating",
+        "1": "mech:block/sawmill"
+      }
+    },
+    "facing=south": {
+      "model": "mech:block/sawmill",
+      "y": 270,
+      "textures": {
+        "0": "mech:block/sawmill_rotating",
+        "1": "mech:block/sawmill"
+      }
+    },
+    "facing=north": {
+      "model": "mech:block/sawmill",
+      "y": 90,
+      "textures": {
+        "0": "mech:block/sawmill_rotating",
+        "1": "mech:block/sawmill"
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "display": {
+    "icon": { "item": "mech:clinker" },
+    "title": { "translate": "advancements.mech.kinetic.clinker.title" },
+    "description": { "translate": "advancements.mech.kinetic.clinker.description" },
+    "frame": "task", "show_toast": true, "announce_to_chat": true, "hidden": false
+  },
+  "parent": "mech:kinetic/raw_clinker",
+  "criteria": {
+    "has_clinker": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": { "items": [{ "items": ["mech:clinker"] }] }
+    }
+  },
+  "requirements": [["has_clinker"]]
+}

@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {"item": "minecraft:diorite"},
+    {"tag": "mech:mortars"}
+  ],
+  "result": {
+    "item": "mech:crushed_stone",
+    "count": 1
+  }
+}

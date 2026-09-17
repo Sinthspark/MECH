@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " F ",
+    "IFR",
+    " F "
+  ],
+  "key": {
+    "R": {"tag": "mech:files"},
+    "I": {"tag": "mech:wire_cutters"},
+    "F": {"item": "mech:tin_ring"}
+  },
+  "result": {
+    "item": "mech:tin_spring",
+    "count": 1
+  }
+}

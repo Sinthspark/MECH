@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ABA",
+    "BCB",
+    "ABA"
+  ],
+  "key": {
+    "A": {"item": "mech:bronze_screw"},
+    "B": {"item": "mech:bronze_plate"},
+    "C": {"tag": "mech:screwdrivers"}
+  },
+  "result": {
+    "item": "mech:bronze_pipe",
+    "count": 1
+  }
+}

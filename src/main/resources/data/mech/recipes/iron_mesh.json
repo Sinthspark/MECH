@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "III",
+    "IWI",
+    "III"
+  ],
+  "key": {
+    "W": {"tag": "mech:files"},
+    "I": {"item": "mech:iron_rod"}
+  },
+  "result": {
+    "item": "mech:iron_mesh",
+    "count": 1
+  }
+}

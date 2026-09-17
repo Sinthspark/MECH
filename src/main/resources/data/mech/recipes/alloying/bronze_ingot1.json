@@ -1,0 +1,10 @@
+{
+  "type": "mech:alloying",
+  "ingredients": [
+    {"item": "minecraft:copper_ingot", "count": 3},
+    {"item": "mech:tin_dust", "count": 1}
+  ],
+  "result": {"item": "mech:bronze_ingot", "count": 4},
+  "steam": 6000,
+  "time": 1200
+}

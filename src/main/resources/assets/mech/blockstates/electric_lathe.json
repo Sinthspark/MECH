@@ -1,0 +1,12 @@
+{
+  "variants": {
+    "active=false,facing=north": { "model": "mech:block/electric_lathe" },
+    "active=false,facing=south": { "model": "mech:block/electric_lathe", "y": 180 },
+    "active=false,facing=west": { "model": "mech:block/electric_lathe", "y": 270 },
+    "active=false,facing=east": { "model": "mech:block/electric_lathe", "y": 90 },
+    "active=true,facing=north": { "model": "mech:block/electric_lathe_active" },
+    "active=true,facing=south": { "model": "mech:block/electric_lathe_active", "y": 180 },
+    "active=true,facing=west": { "model": "mech:block/electric_lathe_active", "y": 270 },
+    "active=true,facing=east": { "model": "mech:block/electric_lathe_active", "y": 90 }
+  }
+}

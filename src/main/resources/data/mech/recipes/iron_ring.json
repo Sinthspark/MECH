@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "HF",
+    " I"
+  ],
+  "key": {
+    "H": {"tag": "mech:hammers"},
+    "I": {"item": "mech:iron_rod"},
+    "F": {"tag": "mech:files"}
+  },
+  "result": {
+    "item": "mech:iron_ring",
+    "count": 1
+  }
+}

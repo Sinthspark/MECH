@@ -1,0 +1,37 @@
+{
+  "display": {
+    "icon": {
+      "item": "mech:sawmill"
+    },
+    "title": {
+      "translate": "advancements.mech.kinetic.sawmill.title"
+    },
+    "description": {
+      "translate": "advancements.mech.kinetic.sawmill.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "mech:kinetic/manual_kinetic_generator",
+  "criteria": {
+    "has_sawmill": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "mech:sawmill"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_sawmill"
+    ]
+  ]
+}

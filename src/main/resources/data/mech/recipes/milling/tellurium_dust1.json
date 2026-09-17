@@ -1,0 +1,11 @@
+{
+  "type": "mech:milling",
+  "ingredient": {
+    "item": "mech:tellurium"
+  },
+  "result": {
+    "item": "mech:tellurium_dust",
+    "count": 1
+  },
+  "cookingtime": 1800
+}

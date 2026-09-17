@@ -1,0 +1,12 @@
+{
+  "variants": {
+    "active=false,facing=north": { "model": "mech:block/advanced_steam_compressor" },
+    "active=false,facing=south": { "model": "mech:block/advanced_steam_compressor", "y": 180 },
+    "active=false,facing=west": { "model": "mech:block/advanced_steam_compressor", "y": 270 },
+    "active=false,facing=east": { "model": "mech:block/advanced_steam_compressor", "y": 90 },
+    "active=true,facing=north": { "model": "mech:block/advanced_steam_compressor_active" },
+    "active=true,facing=south": { "model": "mech:block/advanced_steam_compressor_active", "y": 180 },
+    "active=true,facing=west": { "model": "mech:block/advanced_steam_compressor_active", "y": 270 },
+    "active=true,facing=east": { "model": "mech:block/advanced_steam_compressor_active", "y": 90 }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " I ",
+    "RIR",
+    "RRR"
+  ],
+  "key": {
+    "I": {"item": "mech:tin_ingot"},
+    "R": {"item": "minecraft:stone"}
+  },
+  "result": {
+    "item": "mech:tin_mortar",
+    "count": 1
+  }
+}

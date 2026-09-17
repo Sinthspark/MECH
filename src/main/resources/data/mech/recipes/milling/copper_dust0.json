@@ -1,0 +1,11 @@
+{
+  "type": "mech:milling",
+  "ingredient": {
+    "item": "minecraft:deepslate_copper_ore"
+  },
+  "result": {
+    "item": "mech:copper_dust",
+    "count": 2
+  },
+  "cookingtime": 1800
+}

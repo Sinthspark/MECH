@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " F ",
+    " S ",
+    " F "
+  ],
+  "key": {
+    "S": {"tag": "mech:files"},
+    "F": {"item": "mech:tin_spring"}
+  },
+  "result": {
+    "item": "mech:tin_large_spring",
+    "count": 1
+  }
+}

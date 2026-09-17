@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "mech:raw_clinker"
+  },
+  "result": "mech:clinker",
+  "experience": 0.5,
+  "cookingtime": 400
+}

@@ -1,0 +1,7 @@
+{
+  "type": "mech:extracting",
+  "ingredient": {"item": "minecraft:bricks"},
+  "result": {"item": "minecraft:brick", "count": 8},
+  "steam": 8400,
+  "time": 1200
+}

@@ -1,0 +1,11 @@
+{
+  "type": "mech:milling",
+  "ingredient": {
+    "item": "mech:vulcanite_ingot"
+  },
+  "result": {
+    "item": "mech:vulcanite_dust",
+    "count": 1
+  },
+  "cookingtime": 1800
+}

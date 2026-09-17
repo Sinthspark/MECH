@@ -1,0 +1,16 @@
+{
+  "display": {
+    "icon": { "item": "mech:fluid_concrete_bucket" },
+    "title": { "text": "Жидкая скала" },
+    "description": { "text": "Получите ведро бетона." },
+    "frame": "task", "show_toast": true, "announce_to_chat": true
+  },
+  "parent": "mech:kinetic/cement_bucket",
+  "criteria": {
+    "has_concrete": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": { "items": [{ "items": ["mech:fluid_concrete_bucket"] }] }
+    }
+  },
+  "requirements": [["has_concrete"]]
+}

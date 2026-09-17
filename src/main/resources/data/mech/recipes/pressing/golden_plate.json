@@ -1,0 +1,10 @@
+{
+  "type": "mech:pressing",
+  "ingredient": {
+    "item": "minecraft:gold_ingot"
+  },
+  "result": {
+    "item": "mech:golden_plate"
+  },
+  "cookingtime": 1800
+}

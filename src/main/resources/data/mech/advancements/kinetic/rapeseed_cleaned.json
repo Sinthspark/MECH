@@ -1,0 +1,37 @@
+{
+  "display": {
+    "icon": {
+      "item": "mech:rapeseed_cleaned"
+    },
+    "title": {
+      "translate": "advancements.mech.kinetic.rapeseed_cleaned.title"
+    },
+    "description": {
+      "translate": "advancements.mech.kinetic.rapeseed_cleaned.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "mech:kinetic/rapeseed",
+  "criteria": {
+    "has_cleaned_seeds": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "mech:rapeseed_cleaned"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_cleaned_seeds"
+    ]
+  ]
+}

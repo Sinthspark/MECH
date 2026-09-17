@@ -1,0 +1,16 @@
+{
+  "display": {
+    "icon": { "item": "mech:bronze_ingot" },
+    "title": { "translate": "advancements.mech.kinetic.bronze_ingot.title" },
+    "description": { "translate": "advancements.mech.kinetic.bronze_ingot.description" },
+    "frame": "task", "show_toast": true, "announce_to_chat": true, "hidden": false
+  },
+  "parent": "mech:kinetic/bronze_dust",
+  "criteria": {
+    "has_bronze_ingot": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": { "items": [{ "items": ["mech:bronze_ingot"] }] }
+    }
+  },
+  "requirements": [["has_bronze_ingot"]]
+}

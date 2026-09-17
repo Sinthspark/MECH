@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "mech:block/castilla_sapling"
+  },
+  "render_type": "cutout"
+}

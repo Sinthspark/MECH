@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "BBB",
+    "BCB",
+    "BBB"
+  ],
+  "key": {
+    "B": {"item": "minecraft:brick"},
+    "C": {"item": "mech:fluid_concrete_bucket"}
+  },
+  "result": {
+    "item": "minecraft:bricks",
+    "count": 1
+  }
+}

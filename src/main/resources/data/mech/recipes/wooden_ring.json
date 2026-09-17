@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "HF",
+    " I"
+  ],
+  "key": {
+    "H": {"tag": "mech:mallets"},
+    "I": {"item": "minecraft:stick"},
+    "F": {"tag": "mech:files"}
+  },
+  "result": {
+    "item": "mech:wooden_ring",
+    "count": 1
+  }
+}

@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": { "model": "mech:block/oil_press_dummy" }
+  }
+}

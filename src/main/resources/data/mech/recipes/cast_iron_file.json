@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " F ",
+    " F ",
+    " A "
+  ],
+  "key": {
+    "F": {"item": "mech:cast_iron_plate"},
+    "A": {"item": "minecraft:stick"}
+  },
+  "result": {
+    "item": "mech:cast_iron_file",
+    "count": 1
+  }
+}

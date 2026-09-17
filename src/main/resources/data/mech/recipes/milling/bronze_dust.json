@@ -1,0 +1,11 @@
+{
+  "type": "mech:milling",
+  "ingredient": {
+    "item": "mech:bronze_ingot"
+  },
+  "result": {
+    "item": "mech:bronze_dust",
+    "count": 1
+  },
+  "cookingtime": 1800
+}

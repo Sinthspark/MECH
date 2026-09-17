@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " F ",
+    " S ",
+    " F "
+  ],
+  "key": {
+    "F": {"item": "mech:golden_spring"},
+    "S": {"tag": "mech:files"}
+  },
+  "result": {
+    "item": "mech:golden_large_spring",
+    "count": 1
+  }
+}

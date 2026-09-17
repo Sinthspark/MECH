@@ -1,0 +1,37 @@
+{
+  "display": {
+    "icon": {
+      "item": "mech:rapeseed"
+    },
+    "title": {
+      "translate": "advancements.mech.kinetic.rapeseed.title"
+    },
+    "description": {
+      "translate": "advancements.mech.kinetic.rapeseed.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "mech:kinetic/quern",
+  "criteria": {
+    "has_rapeseed": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "mech:rapeseed"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_rapeseed"
+    ]
+  ]
+}

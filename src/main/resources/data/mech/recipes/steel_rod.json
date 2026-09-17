@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "A ",
+    " F"
+  ],
+  "key": {
+    "F": {"item": "mech:steel_ingot"},
+    "A": {"tag": "mech:files"}
+  },
+  "result": {
+    "item": "mech:steel_rod",
+    "count": 1
+  }
+}

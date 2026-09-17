@@ -1,0 +1,11 @@
+{
+  "type": "mech:milling",
+  "ingredient": {
+    "item": "mech:deepslate_tellurium_ore"
+  },
+  "result": {
+    "item": "mech:tellurium_dust",
+    "count": 2
+  },
+  "cookingtime": 1800
+}

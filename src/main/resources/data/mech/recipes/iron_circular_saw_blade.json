@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " F ",
+    "WSD",
+    "   "
+  ],
+  "key": {
+    "W": {"tag": "mech:wire_cutters"},
+    "F": {"tag": "mech:files"},
+    "S": {"item": "mech:iron_plate"},
+    "D": {"tag": "mech:hammers"}
+  },
+  "result": {
+    "item": "mech:iron_circular_saw_blade",
+    "count": 1
+  }
+}

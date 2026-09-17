@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "mech:block/hydrogen_peroxide_still"
+  }
+}

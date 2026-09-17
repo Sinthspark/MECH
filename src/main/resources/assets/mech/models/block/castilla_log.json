@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_column",
+  "textures": {
+    "end": "mech:block/castilla_log_top",
+    "side": "mech:block/castilla_log"
+  }
+}

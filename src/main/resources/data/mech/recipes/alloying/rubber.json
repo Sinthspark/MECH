@@ -1,0 +1,10 @@
+{
+  "type": "mech:alloying",
+  "ingredients": [
+    {"item": "mech:sulfur"},
+    {"item": "mech:latex_bucket", "count": 2}
+  ],
+  "result": {"item": "mech:rubber", "count": 2},
+  "steam": 6000,
+  "time": 1200
+}

@@ -1,0 +1,10 @@
+{
+  "type": "mech:milling",
+  "ingredient": {
+    "item": "mech:rapeseed"
+  },
+  "result": {
+    "item": "mech:rapeseed_cleaned"
+  },
+  "cookingtime": 1200
+}

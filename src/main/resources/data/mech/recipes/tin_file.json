@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " I ",
+    " I ",
+    " R "
+  ],
+  "key": {
+    "R": {"item": "minecraft:stick"},
+    "I": {"item": "mech:tin_plate"}
+  },
+  "result": {
+    "item": "mech:tin_file",
+    "count": 1
+  }
+}

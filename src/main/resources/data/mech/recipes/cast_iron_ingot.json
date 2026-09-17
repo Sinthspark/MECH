@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "mech:bronze_dust"
+  },
+  "result": "mech:bronze_ingot",
+  "cookingtime": 100
+}

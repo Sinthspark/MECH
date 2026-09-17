@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "FF ",
+    "FFA",
+    "FF "
+  ],
+  "key": {
+    "F": {"item": "mech:bronze_ingot"},
+    "A": {"item": "minecraft:stick"}
+  },
+  "result": {
+    "item": "mech:bronze_hammer",
+    "count": 1
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "display": {
+    "icon": { "item": "mech:water_wheel" },
+    "title": { "translate": "advancements.mech.kinetic.water_wheel.title" },
+    "description": { "translate": "advancements.mech.kinetic.water_wheel.description" },
+    "frame": "task", "show_toast": true, "announce_to_chat": true, "hidden": false
+  },
+  "parent": "mech:kinetic/wheel_parts",
+  "criteria": {
+    "has_water_wheel": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": { "items": [{ "items": ["mech:water_wheel"] }] }
+    }
+  },
+  "requirements": [["has_water_wheel"]]
+}

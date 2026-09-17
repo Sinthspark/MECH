@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "mech:block/steam_turbine" },
+    "facing=south": { "model": "mech:block/steam_turbine", "y": 180 },
+    "facing=east":  { "model": "mech:block/steam_turbine", "y": 90 },
+    "facing=west":  { "model": "mech:block/steam_turbine", "y": 270 }
+  }
+}

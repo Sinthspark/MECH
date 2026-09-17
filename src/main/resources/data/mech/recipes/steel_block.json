@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "BBB",
+    "BBB",
+    "BBB"
+  ],
+  "key": {
+    "B": {"item": "mech:steel_ingot"}
+  },
+  "result": {
+    "item": "mech:steel_block",
+    "count": 1
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "mech:pressing",
+  "ingredient": {
+    "item": "mech:bronze_ingot"
+  },
+  "result": {
+    "item": "mech:bronze_plate"
+  },
+  "cookingtime": 1800
+}

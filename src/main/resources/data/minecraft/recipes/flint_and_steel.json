@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ABA",
+    "CDE",
+    "AFA"
+  ],
+  "key": {
+    "A": {"item": "mech:steel_screw"},
+    "B": {"item": "mech:steel_rod"},
+    "C": {"tag": "mech:hammers"},
+    "D": {"item": "minecraft:flint"},
+    "E": {"tag": "mech:screwdrivers"},
+    "F": {"item": "mech:steel_spring"}
+  },
+  "result": {
+    "item": "minecraft:flint_and_steel",
+    "count": 1
+  }
+}

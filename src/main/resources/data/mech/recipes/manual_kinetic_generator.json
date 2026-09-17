@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "S S",
+    "SVS",
+    "SBS"
+  ],
+  "key": {
+    "S": {"item": "minecraft:stick"},
+    "V": {"item": "mech:vulcanite_ingot"},
+    "B": {"item": "mech:vulcanite_block"}
+  },
+  "result": {
+    "item": "mech:manual_kinetic_generator",
+    "count": 1
+  }
+}

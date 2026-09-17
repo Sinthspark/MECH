@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    " S ",
+    "IDR"
+  ],
+  "key": {
+    "R": {"tag": "mech:hammers"},
+    "I": {"tag": "mech:wire_cutters"},
+    "S": {"tag": "mech:files"},
+    "D": {"item": "mech:golden_plate"}
+  },
+  "result": {
+    "item": "mech:golden_circular_saw_blade",
+    "count": 1
+  }
+}

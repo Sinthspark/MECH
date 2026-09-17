@@ -1,0 +1,8 @@
+{
+  "type": "mech:grinding",
+  "ingredient": {"item": "mech:sulfur_ore"},
+  "result": {"item": "mech:sulfur"},
+  "count": 2,
+  "steam": 6000,
+  "time": 1200
+}

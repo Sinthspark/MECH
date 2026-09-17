@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {"item": "mech:gypsum_stone"},
+    {"tag": "mech:mortars"}
+  ],
+  "result": {
+    "item": "mech:gypsum_powder",
+    "count": 1
+  }
+}

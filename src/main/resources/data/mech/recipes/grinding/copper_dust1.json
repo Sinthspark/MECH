@@ -1,0 +1,8 @@
+{
+  "type": "mech:grinding",
+  "ingredient": {"item": "minecraft:deepslate_copper_ore"},
+  "result": {"item": "mech:copper_dust"},
+  "count": 2,
+  "steam": 6000,
+  "time": 1200
+}

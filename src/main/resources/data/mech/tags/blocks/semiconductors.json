@@ -1,0 +1,33 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:redstone_block",
+    "minecraft:coal_block",
+    "minecraft:exposed_copper",
+    "minecraft:exposed_cut_copper",
+    "minecraft:exposed_cut_copper_stairs",
+    "minecraft:exposed_cut_copper_slab",
+    "minecraft:waxed_exposed_copper",
+    "minecraft:waxed_exposed_cut_copper",
+    "minecraft:waxed_exposed_cut_copper_stairs",
+    "minecraft:waxed_exposed_cut_copper_slab",
+    "minecraft:crying_obsidian",
+    "minecraft:big_dripleaf",
+    "minecraft:small_dripleaf",
+    "minecraft:chorus_plant",
+    "minecraft:chorus_flower",
+    "minecraft:sculk_vein",
+    "minecraft:sculk_sensor",
+    "minecraft:calibrated_sculk_sensor",
+    "minecraft:end_rod",
+    "minecraft:redstone_lamp",
+    "minecraft:redstone_torch",
+    "minecraft:redstone_wire",
+    "minecraft:repeater",
+    "minecraft:comparator",
+    "minecraft:target",
+    "minecraft:dragon_egg",
+    "minecraft:end_portal_frame",
+    "mech:tellurium_block"
+  ]
+}

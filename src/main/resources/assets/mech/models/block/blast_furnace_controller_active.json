@@ -1,0 +1,8 @@
+{
+  "parent": "block/orientable",
+  "textures": {
+    "top": "mech:block/blast_furnace_bricks",
+    "front": "mech:block/blast_furnace_controller_on",
+    "side": "mech:block/blast_furnace_bricks"
+  }
+}

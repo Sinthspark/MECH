@@ -1,0 +1,20 @@
+{
+  "display": {
+    "icon": { "item": "mech:raw_clinker" },
+    "title": { "translate": "advancements.mech.kinetic.raw_clinker.title" },
+    "description": { "translate": "advancements.mech.kinetic.raw_clinker.description" },
+    "frame": "task", "show_toast": true, "announce_to_chat": true, "hidden": false
+  },
+  "parent": "mech:kinetic/slaked_lime",
+  "criteria": {
+    "has_raw_clinker": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": { "items": [{ "items": ["mech:raw_clinker"] }] }
+    },
+    "has_clay": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": { "items": [{ "items": ["minecraft:clay_ball"] }] }
+    }
+  },
+  "requirements": [["has_raw_clinker"], ["has_clay"]]
+}

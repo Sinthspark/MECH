@@ -1,0 +1,16 @@
+{
+  "display": {
+    "icon": { "item": "mech:slaked_lime" },
+    "title": { "translate": "advancements.mech.kinetic.slaked_lime.title" },
+    "description": { "translate": "advancements.mech.kinetic.slaked_lime.description" },
+    "frame": "task", "show_toast": true, "announce_to_chat": true, "hidden": false
+  },
+  "parent": "mech:kinetic/quicklime",
+  "criteria": {
+    "has_slaked_lime": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": { "items": [{ "items": ["mech:slaked_lime"] }] }
+    }
+  },
+  "requirements": [["has_slaked_lime"]]
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SFS",
+    "SSS",
+    " S "
+  ],
+  "key": {
+    "F": {"tag": "mech:hammers"},
+    "S": {"item": "mech:golden_plate"}
+  },
+  "result": {
+    "item": "mech:golden_wrench",
+    "count": 1
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "display": {
+    "icon": { "item": "mech:tin_ingot" },
+    "title": { "translate": "advancements.mech.kinetic.tin_ingot.title" },
+    "description": { "translate": "advancements.mech.kinetic.tin_ingot.description" },
+    "frame": "task", "show_toast": true, "announce_to_chat": true, "hidden": false
+  },
+  "parent": "mech:kinetic/tin_ore",
+  "criteria": {
+    "has_tin_ingot": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": { "items": [{ "items": ["mech:tin_ingot"] }] }
+    }
+  },
+  "requirements": [["has_tin_ingot"]]
+}

@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "mech:iron_wrench",
+    "mech:golden_wrench",
+    "mech:copper_wrench",
+    "mech:tin_wrench",
+    "mech:bronze_wrench",
+    "mech:cast_iron_wrench",
+    "mech:steel_wrench"
+  ]
+}

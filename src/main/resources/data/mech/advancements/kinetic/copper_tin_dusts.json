@@ -1,0 +1,20 @@
+{
+  "display": {
+    "icon": { "item": "mech:copper_dust" },
+    "title": { "translate": "advancements.mech.kinetic.copper_tin_dusts.title" },
+    "description": { "translate": "advancements.mech.kinetic.copper_tin_dusts.description" },
+    "frame": "task", "show_toast": true, "announce_to_chat": true, "hidden": false
+  },
+  "parent": "mech:kinetic/tin_ingot",
+  "criteria": {
+    "has_copper_dust": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": { "items": [{ "items": ["mech:copper_dust"] }] }
+    },
+    "has_tin_dust": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": { "items": [{ "items": ["mech:tin_dust"] }] }
+    }
+  },
+  "requirements": [["has_copper_dust"], ["has_tin_dust"]]
+}

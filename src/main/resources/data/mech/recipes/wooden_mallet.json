@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "AA ",
+    "AAS",
+    "AA "
+    ],
+  "key": {
+    "A": {"tag": "minecraft:planks"},
+    "S": {"item": "minecraft:stick"}
+  },
+  "result": {
+    "item": "mech:wooden_mallet",
+    "count": 1
+  }
+}

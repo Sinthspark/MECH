@@ -1,0 +1,16 @@
+{
+  "display": {
+    "icon": { "item": "mech:crushed_stone" },
+    "title": { "translate": "advancements.mech.kinetic.crushed_stone.title" },
+    "description": { "translate": "advancements.mech.kinetic.crushed_stone.description" },
+    "frame": "task", "show_toast": true, "announce_to_chat": true, "hidden": false
+  },
+  "parent": "mech:kinetic/mortar",
+  "criteria": {
+    "has_crushed_stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": { "items": [{ "items": ["mech:crushed_stone"] }] }
+    }
+  },
+  "requirements": [["has_crushed_stone"]]
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "AA ",
+    "AAS",
+    "AA "
+  ],
+  "key": {
+    "A": {"item": "minecraft:iron_ingot"},
+    "S": {"item": "minecraft:stick"}
+  },
+  "result": {
+    "item": "mech:iron_hammer",
+    "count": 1
+  }
+}

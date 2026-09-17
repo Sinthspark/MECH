@@ -1,0 +1,10 @@
+{
+  "type": "mech:milling",
+  "ingredient": {
+    "item": "minecraft:sugar_cane"
+  },
+  "result": {
+    "item": "minecraft:sugar"
+  },
+  "cookingtime": 1200
+}

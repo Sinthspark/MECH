@@ -1,0 +1,37 @@
+{
+  "display": {
+    "icon": {
+      "item": "mech:vulcanite_dust"
+    },
+    "title": {
+      "translate": "advancements.mech.kinetic.vulcanite_dust.title"
+    },
+    "description": {
+      "translate": "advancements.mech.kinetic.vulcanite_dust.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "mech:kinetic/dusts",
+  "criteria": {
+    "has_vulcanite_dust": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "mech:vulcanite_dust"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_vulcanite_dust"
+    ]
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "II",
+    "RS"
+  ],
+  "key": {
+    "R": {"tag": "mech:hammers"},
+    "I": {"item": "mech:golden_plate"},
+    "S": {"tag": "mech:files"}
+  },
+  "result": {
+    "item": "mech:golden_saw_blade",
+    "count": 1
+  }
+}

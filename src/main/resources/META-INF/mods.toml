@@ -1,0 +1,21 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="GNU GPL 3.0"
+[[mods]]
+modId="mech"
+version="1.0.0"
+displayName="Modular energy & crafting hardware"
+authors="Sinthspark"
+description='''${mod_description}'''
+[[dependencies."mech"]]
+   modId="forge"
+   mandatory=true
+   versionRange="${forge_version_range}"
+   ordering="NONE"
+   side="BOTH"
+[[dependencies."mech"]]
+   modId="minecraft"
+   mandatory=true
+   versionRange="${minecraft_version_range}"
+   ordering="NONE"
+   side="BOTH"

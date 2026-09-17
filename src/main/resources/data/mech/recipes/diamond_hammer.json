@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "FF ",
+    "FFA",
+    "FF "
+  ],
+  "key": {
+    "F": {"item": "minecraft:diamond"},
+    "A": {"item": "minecraft:stick"}
+  },
+  "result": {
+    "item": "mech:diamond_hammer",
+    "count": 1
+  }
+}

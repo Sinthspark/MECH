@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    " A ",
+    "BCS"
+  ],
+  "key": {
+    "C": {"item": "mech:copper_plate"},
+    "A": {"tag": "mech:files"},
+    "S": {"tag": "mech:hammers"},
+    "B": {"tag": "mech:wire_cutters"}
+  },
+  "result": {
+    "item": "mech:copper_circular_saw_blade",
+    "count": 1
+  }
+}

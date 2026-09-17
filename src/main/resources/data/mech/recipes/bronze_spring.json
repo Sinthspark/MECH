@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " F ",
+    "CFA",
+    " F "
+  ],
+  "key": {
+    "F": {"item": "mech:bronze_ring"},
+    "A": {"tag": "mech:files"},
+    "C": {"tag": "mech:wire_cutters"}
+  },
+  "result": {
+    "item": "mech:bronze_spring",
+    "count": 1
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": { "item": "mech:fluid_cement_bucket" },
+    "title": { "translate": "advancements.mech.kinetic.cement_bucket.title" },
+    "description": { "translate": "advancements.mech.kinetic.cement_bucket.description" },
+    "frame": "task", "show_toast": true, "announce_to_chat": true, "hidden": false
+  },
+  "parent": "mech:kinetic/clinker",
+  "criteria": {
+    "has_fluid_cement_bucket": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": { "items": [{ "items": ["mech:fluid_cement_bucket"] }] }
+    },
+    "has_gypsum_powder": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": { "items": [{ "items": ["mech:gypsum_powder"] }] }
+    }
+  },
+  "requirements": [
+    ["has_fluid_cement_bucket"],
+    ["has_gypsum_powder"]
+  ]
+}

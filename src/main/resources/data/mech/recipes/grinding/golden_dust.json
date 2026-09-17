@@ -1,0 +1,8 @@
+{
+  "type": "mech:grinding",
+  "ingredient": {"item": "minecraft:gold_ore"},
+  "result": {"item": "mech:golden_dust"},
+  "count": 2,
+  "steam": 6000,
+  "time": 1200
+}

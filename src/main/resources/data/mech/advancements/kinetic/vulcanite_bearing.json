@@ -1,0 +1,20 @@
+{
+  "display": {
+    "icon": { "item": "mech:vulcanite_bearing" },
+    "title": { "translate": "advancements.mech.kinetic.vulcanite_bearing.title" },
+    "description": { "translate": "advancements.mech.kinetic.vulcanite_bearing.description" },
+    "frame": "task", "show_toast": true, "announce_to_chat": true, "hidden": false
+  },
+  "parent": "mech:kinetic/water_wheel",
+  "criteria": {
+    "has_bearing": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": { "items": [{ "items": ["mech:vulcanite_bearing"] }] }
+    },
+    "has_reductor": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": { "items": [{ "items": ["mech:reductor"] }] }
+    }
+  },
+  "requirements": [["has_bearing"], ["has_reductor"]]
+}

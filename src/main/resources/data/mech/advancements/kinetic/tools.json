@@ -1,0 +1,51 @@
+{
+  "display": {
+    "icon": { "item": "mech:bronze_hammer" },
+    "title": { "translate": "advancements.mech.kinetic.tools.title" },
+    "description": { "translate": "advancements.mech.kinetic.tools.description" },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "mech:root",
+  "criteria": {
+    "has_hammer": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": { "items": [{ "tag": "mech:hammers" }] }
+    },
+    "has_file": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": { "items": [{ "tag": "mech:files" }] }
+    },
+    "has_wrench": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": { "items": [{ "tag": "mech:wrenches" }] }
+    },
+    "has_wire_cutters": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": { "items": [{ "tag": "mech:wire_cutters" }] }
+    },
+    "has_screwdriver": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": { "items": [{ "tag": "mech:screwdrivers" }] }
+    },
+    "has_saw": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": { "items": [{ "tag": "mech:saws" }] }
+    },
+    "has_mallet": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": { "items": [{ "items": ["mech:wooden_mallet"] }] }
+    }
+  },
+  "requirements": [
+    ["has_hammer"],
+    ["has_file"],
+    ["has_wrench"],
+    ["has_wire_cutters"],
+    ["has_screwdriver"],
+    ["has_saw"],
+    ["has_mallet"]
+  ]
+}

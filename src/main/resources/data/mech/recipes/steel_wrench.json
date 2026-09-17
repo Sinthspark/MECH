@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "FAF",
+    "FFF",
+    " F "
+  ],
+  "key": {
+    "F": {"item": "mech:steel_plate"},
+    "A": {"tag": "mech:hammers"}
+  },
+  "result": {
+    "item": "mech:steel_wrench",
+    "count": 1
+  }
+}

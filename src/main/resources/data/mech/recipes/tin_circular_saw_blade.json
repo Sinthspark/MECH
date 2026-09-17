@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    " F ",
+    "DRS"
+  ],
+  "key": {
+    "R": {"item": "mech:tin_plate"},
+    "F": {"tag": "mech:files"},
+    "S": {"tag": "mech:hammers"},
+    "D": {"tag": "mech:wire_cutters"}
+  },
+  "result": {
+    "item": "mech:tin_circular_saw_blade",
+    "count": 1
+  }
+}

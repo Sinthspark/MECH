@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": [
+    {"item": "mech:tellurium_ore"},
+    {"item": "mech:deepslate_tellurium_ore"},
+    {"item": "mech:raw_tellurium"}
+  ],
+  "result": "mech:tellurium",
+  "experience": 0.7,
+  "cookingtime": 100
+}

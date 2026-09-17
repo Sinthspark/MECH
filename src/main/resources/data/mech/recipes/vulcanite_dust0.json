@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {"item": "mech:vulcanite_ingot"},
+    {"tag": "mech:mortars"}
+  ],
+  "result": {
+    "item": "mech:vulcanite_dust",
+    "count": 1
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "mech:iron_saw",
+    "mech:golden_saw",
+    "mech:copper_saw",
+    "mech:tin_saw",
+    "mech:bronze_saw",
+    "mech:cast_iron_saw",
+    "mech:steel_saw"
+  ]
+}

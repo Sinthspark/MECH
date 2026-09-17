@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SWA",
+    "SCA",
+    " A "
+  ],
+  "key": {
+    "S": {"item": "mech:sand_dust"},
+    "W": {"item": "minecraft:water_bucket"},
+    "C": {"item": "mech:fluid_cement_bucket"},
+    "A": {"item": "mech:crushed_stone"}
+  },
+  "result": {
+    "item": "mech:fluid_concrete_bucket",
+    "count": 1
+  }
+}

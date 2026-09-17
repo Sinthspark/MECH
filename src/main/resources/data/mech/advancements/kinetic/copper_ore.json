@@ -1,0 +1,37 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:copper_ore"
+    },
+    "title": {
+      "translate": "advancements.mech.copper_ore.title"
+    },
+    "description": {
+      "translate": "advancements.mech.copper_ore.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "mech:root",
+  "criteria": {
+    "got_copper": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:raw_copper"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "got_copper"
+    ]
+  ]
+}

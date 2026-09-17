@@ -1,0 +1,37 @@
+{
+  "multipart": [
+    { "when": {"axis": "y"}, "apply": {"model": "mech:block/castilla_log"} },
+    { "when": {"axis": "z"}, "apply": {"model": "mech:block/castilla_log", "x": 90} },
+    { "when": {"axis": "x"}, "apply": {"model": "mech:block/castilla_log", "x": 90, "y": 90} },
+
+    { "when": {"axis": "y", "tapped": true, "latex": false, "facing": "north"}, "apply": {"model": "mech:block/castilla_log_tapped_y"} },
+    { "when": {"axis": "y", "tapped": true, "latex": false, "facing": "south"}, "apply": {"model": "mech:block/castilla_log_tapped_y", "y": 180} },
+    { "when": {"axis": "y", "tapped": true, "latex": false, "facing": "east"},  "apply": {"model": "mech:block/castilla_log_tapped_y", "y": 90} },
+    { "when": {"axis": "y", "tapped": true, "latex": false, "facing": "west"},  "apply": {"model": "mech:block/castilla_log_tapped_y", "y": 270} },
+
+    { "when": {"axis": "x", "tapped": true, "latex": false, "facing": "north"}, "apply": {"model": "mech:block/castilla_log_tapped_x"} },
+    { "when": {"axis": "x", "tapped": true, "latex": false, "facing": "south"}, "apply": {"model": "mech:block/castilla_log_tapped_x", "x": 180} },
+    { "when": {"axis": "x", "tapped": true, "latex": false, "facing": "up"},    "apply": {"model": "mech:block/castilla_log_tapped_x", "x": 270} },
+    { "when": {"axis": "x", "tapped": true, "latex": false, "facing": "down"},  "apply": {"model": "mech:block/castilla_log_tapped_x", "x": 90} },
+
+    { "when": {"axis": "z", "tapped": true, "latex": false, "facing": "east"}, "apply": {"model": "mech:block/castilla_log_tapped_z_east"} },
+    { "when": {"axis": "z", "tapped": true, "latex": false, "facing": "west"}, "apply": {"model": "mech:block/castilla_log_tapped_z_west"} },
+    { "when": {"axis": "z", "tapped": true, "latex": false, "facing": "up"},   "apply": {"model": "mech:block/castilla_log_tapped_z_up"} },
+    { "when": {"axis": "z", "tapped": true, "latex": false, "facing": "down"}, "apply": {"model": "mech:block/castilla_log_tapped_z_down"} },
+
+    { "when": {"axis": "y", "tapped": true, "latex": true, "facing": "north"}, "apply": {"model": "mech:block/castilla_log_latex_y"} },
+    { "when": {"axis": "y", "tapped": true, "latex": true, "facing": "south"}, "apply": {"model": "mech:block/castilla_log_latex_y", "y": 180} },
+    { "when": {"axis": "y", "tapped": true, "latex": true, "facing": "east"},  "apply": {"model": "mech:block/castilla_log_latex_y", "y": 90} },
+    { "when": {"axis": "y", "tapped": true, "latex": true, "facing": "west"},  "apply": {"model": "mech:block/castilla_log_latex_y", "y": 270} },
+
+    { "when": {"axis": "x", "tapped": true, "latex": true, "facing": "north"}, "apply": {"model": "mech:block/castilla_log_latex_x"} },
+    { "when": {"axis": "x", "tapped": true, "latex": true, "facing": "south"}, "apply": {"model": "mech:block/castilla_log_latex_x", "x": 180} },
+    { "when": {"axis": "x", "tapped": true, "latex": true, "facing": "up"},    "apply": {"model": "mech:block/castilla_log_latex_x", "x": 270} },
+    { "when": {"axis": "x", "tapped": true, "latex": true, "facing": "down"},  "apply": {"model": "mech:block/castilla_log_latex_x", "x": 90} },
+
+    { "when": {"axis": "z", "tapped": true, "latex": true, "facing": "east"}, "apply": {"model": "mech:block/castilla_log_latex_z_east"} },
+    { "when": {"axis": "z", "tapped": true, "latex": true, "facing": "west"}, "apply": {"model": "mech:block/castilla_log_latex_z_west"} },
+    { "when": {"axis": "z", "tapped": true, "latex": true, "facing": "up"},   "apply": {"model": "mech:block/castilla_log_latex_z_up"} },
+    { "when": {"axis": "z", "tapped": true, "latex": true, "facing": "down"}, "apply": {"model": "mech:block/castilla_log_latex_z_down"} }
+  ]
+}

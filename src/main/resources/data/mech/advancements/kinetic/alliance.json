@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:copper_ingot"
+    },
+    "title": {
+      "translate": "advancements.mech.kinetic.alliance.title"
+    },
+    "description": {
+      "translate": "advancements.mech.kinetic.alliance.description"
+    },
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "parent": "mech:root",
+  "criteria": {
+    "has_copper": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [{"items": ["minecraft:copper_ingot"]}]
+      }
+    },
+    "has_tellurium": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [{"items": ["mech:tellurium"]}]
+      }
+    }
+  },
+  "requirements": [
+    ["has_copper"],
+    ["has_tellurium"]
+  ]
+}

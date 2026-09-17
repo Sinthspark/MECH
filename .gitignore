@@ -1,0 +1,29 @@
+# Gradle
+.gradle/
+build/
+run/
+run-data/
+logs/
+
+# IDE
+.idea/
+.vscode/
+*.iml
+
+# Python
+.venv/
+venv/
+__pycache__/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Java
+*.class
+*.jar
+!gradle-wrapper.jar
+
+# Прочее
+generator/
+TestSSL.class

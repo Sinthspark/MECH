@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "mech:limestone_chunk"
+  },
+  "result": "mech:quicklime",
+  "experience": 0.3,
+  "cookingtime": 200
+}

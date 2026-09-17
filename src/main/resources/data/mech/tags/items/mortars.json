@@ -1,0 +1,16 @@
+{
+  "replace": false,
+  "values": [
+    "mech:flint_mortar",
+    "mech:iron_mortar",
+    "mech:golden_mortar",
+    "mech:copper_mortar",
+    "mech:tin_mortar",
+    "mech:tellurium_mortar",
+    "mech:vulcanite_mortar",
+    "mech:diamond_mortar",
+    "mech:bronze_mortar",
+    "mech:cast_iron_mortar",
+    "mech:steel_mortar"
+  ]
+}

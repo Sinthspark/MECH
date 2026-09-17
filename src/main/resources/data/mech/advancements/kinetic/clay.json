@@ -1,0 +1,16 @@
+{
+  "display": {
+    "icon": { "item": "minecraft:clay" },
+    "title": { "text": "Мягкая порода" },
+    "description": { "text": "Добудьте глину." },
+    "frame": "task", "show_toast": true, "announce_to_chat": true
+  },
+  "parent": "mech:root",
+  "criteria": {
+    "has_clay": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": { "items": [{ "items": ["minecraft:clay_ball"] }] }
+    }
+  },
+  "requirements": [["has_clay"]]
+}

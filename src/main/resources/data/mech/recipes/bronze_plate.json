@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "H  ",
+    "I  ",
+    "I  "
+  ],
+  "key": {
+    "H": {"tag": "mech:hammers"},
+    "I": {"item": "mech:bronze_ingot"}
+  },
+  "result": {
+    "item": "mech:bronze_plate",
+    "count": 1
+  }
+}

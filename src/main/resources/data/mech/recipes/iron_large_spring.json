@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " I ",
+    " W ",
+    " I "
+  ],
+  "key": {
+    "W": {"tag": "mech:files"},
+    "I": {"item": "mech:iron_spring"}
+  },
+  "result": {
+    "item": "mech:iron_large_spring",
+    "count": 1
+  }
+}

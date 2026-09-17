@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "III",
+    "III",
+    "III"
+  ],
+  "key": {
+    "I": {"item": "mech:vulcanite_ingot"}
+  },
+  "result": {
+    "item": "mech:vulcanite_block",
+    "count": 1
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "HF",
+    " I"
+  ],
+  "key": {
+    "H": {"tag": "mech:saws"},
+    "I": {"item": "mech:iron_rod"},
+    "F": {"tag": "mech:files"}
+  },
+  "result": {
+    "item": "mech:iron_screw",
+    "count": 2
+  }
+}

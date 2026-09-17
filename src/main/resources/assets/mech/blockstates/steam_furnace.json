@@ -1,0 +1,12 @@
+{
+  "variants": {
+    "active=false,facing=north": { "model": "mech:block/steam_furnace" },
+    "active=false,facing=south": { "model": "mech:block/steam_furnace", "y": 180 },
+    "active=false,facing=west": { "model": "mech:block/steam_furnace", "y": 270 },
+    "active=false,facing=east": { "model": "mech:block/steam_furnace", "y": 90 },
+    "active=true,facing=north": { "model": "mech:block/steam_furnace_active" },
+    "active=true,facing=south": { "model": "mech:block/steam_furnace_active", "y": 180 },
+    "active=true,facing=west": { "model": "mech:block/steam_furnace_active", "y": 270 },
+    "active=true,facing=east": { "model": "mech:block/steam_furnace_active", "y": 90 }
+  }
+}

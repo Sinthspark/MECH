@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " S ",
+    "ASA",
+    "AAA"
+  ],
+  "key": {
+    "A": {"item": "minecraft:stone"},
+    "S": {"item": "mech:vulcanite_ingot"}
+  },
+  "result": {
+    "item": "mech:vulcanite_mortar",
+    "count": 1
+  }
+}

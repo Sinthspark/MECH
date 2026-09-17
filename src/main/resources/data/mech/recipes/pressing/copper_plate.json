@@ -1,0 +1,10 @@
+{
+  "type": "mech:pressing",
+  "ingredient": {
+    "item": "minecraft:copper_ingot"
+  },
+  "result": {
+    "item": "mech:copper_plate"
+  },
+  "cookingtime": 1800
+}

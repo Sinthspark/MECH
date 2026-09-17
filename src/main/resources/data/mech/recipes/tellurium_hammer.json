@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "AA ",
+    "AAS",
+    "AA "
+  ],
+  "key": {
+    "A": {"item": "mech:tellurium"},
+    "S": {"item": "minecraft:stick"}
+  },
+  "result": {
+    "item": "mech:tellurium_hammer",
+    "count": 1
+  }
+}

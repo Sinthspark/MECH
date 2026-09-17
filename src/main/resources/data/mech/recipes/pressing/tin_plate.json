@@ -1,0 +1,10 @@
+{
+  "type": "mech:pressing",
+  "ingredient": {
+    "item": "mech:tin_ingot"
+  },
+  "result": {
+    "item": "mech:tin_plate"
+  },
+  "cookingtime": 1800
+}

@@ -1,0 +1,37 @@
+{
+  "display": {
+    "icon": {
+      "item": "mech:tellurium"
+    },
+    "title": {
+      "translate": "advancements.mech.tellurium.title"
+    },
+    "description": {
+      "translate": "advancements.mech.tellurium.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "mech:kinetic/tellurium_ore",
+  "criteria": {
+    "got_tellurium_ingot": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "mech:tellurium"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "got_tellurium_ingot"
+    ]
+  ]
+}

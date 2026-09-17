@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=west": { "model": "mech:block/press" },
+    "facing=east": { "model": "mech:block/press", "y": 180 },
+    "facing=south": { "model": "mech:block/press", "y": 270 },
+    "facing=north": { "model": "mech:block/press", "y": 90 }
+  }
+}

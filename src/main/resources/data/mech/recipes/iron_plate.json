@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "H  ",
+    "I  ",
+    "I  "
+  ],
+  "key": {
+    "H": {"tag": "mech:hammers"},
+    "I": {"item": "minecraft:iron_ingot"}
+  },
+  "result": {
+    "item": "mech:iron_plate",
+    "count": 1
+  }
+}

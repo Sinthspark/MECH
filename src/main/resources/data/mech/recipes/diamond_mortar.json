@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " F ",
+    "AFA",
+    "AAA"
+  ],
+  "key": {
+    "F": {"item": "minecraft:diamond"},
+    "A": {"item": "minecraft:stone"}
+  },
+  "result": {
+    "item": "mech:diamond_mortar",
+    "count": 1
+  }
+}

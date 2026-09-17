@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "BPB",
+    "PWP",
+    "BPB"
+  ],
+  "key": {
+    "B": {"item": "minecraft:bricks"},
+    "P": {"item": "mech:steel_plate"},
+    "W": {"tag": "mech:wrenches"}
+  },
+  "result": {
+    "item": "mech:steel_brick_casing",
+    "count": 1
+  }
+}

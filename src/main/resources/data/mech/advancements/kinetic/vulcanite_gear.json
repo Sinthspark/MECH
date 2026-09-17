@@ -1,0 +1,37 @@
+{
+  "display": {
+    "icon": {
+      "item": "mech:vulcanite_gear"
+    },
+    "title": {
+      "translate": "advancements.mech.kinetic.vulcanite_gear.title"
+    },
+    "description": {
+      "translate": "advancements.mech.kinetic.vulcanite_gear.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "mech:kinetic/vulcanite_ingot",
+  "criteria": {
+    "has_vulcanite_gear": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "mech:vulcanite_gear"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_vulcanite_gear"
+    ]
+  ]
+}

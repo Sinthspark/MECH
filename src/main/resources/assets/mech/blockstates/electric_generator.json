@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "mech:block/electric_generator" },
+    "facing=south": { "model": "mech:block/electric_generator", "y": 180 },
+    "facing=east":  { "model": "mech:block/electric_generator", "y": 90 },
+    "facing=west":  { "model": "mech:block/electric_generator", "y": 270 }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {"item": "mech:copper_dust"},
+    {"item": "mech:tellurium_dust"},
+    {"item": "mech:tellurium_dust"}
+  ],
+  "result": {
+    "item": "mech:vulcanite_dust",
+    "count": 2
+  }
+}

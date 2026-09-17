@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "mech:iron_hammer",
+    "mech:golden_hammer",
+    "mech:copper_hammer",
+    "mech:tin_hammer",
+    "mech:tellurium_hammer",
+    "mech:vulcanite_hammer",
+    "mech:diamond_hammer",
+    "mech:bronze_hammer",
+    "mech:cast_iron_hammer",
+    "mech:steel_hammer"
+  ]
+}

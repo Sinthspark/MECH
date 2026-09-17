@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "A ",
+    " F"
+  ],
+  "key": {
+    "F": {"item": "mech:bronze_ingot"},
+    "A": {"tag": "mech:files"}
+  },
+  "result": {
+    "item": "mech:bronze_rod",
+    "count": 1
+  }
+}

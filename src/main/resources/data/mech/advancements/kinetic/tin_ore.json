@@ -1,0 +1,16 @@
+{
+  "display": {
+    "icon": { "item": "mech:tin_ore" },
+    "title": { "translate": "advancements.mech.kinetic.tin_ore.title" },
+    "description": { "translate": "advancements.mech.kinetic.tin_ore.description" },
+    "frame": "task", "show_toast": true, "announce_to_chat": true, "hidden": false
+  },
+  "parent": "mech:root",
+  "criteria": {
+    "has_tin_ore": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": { "items": [{ "items": ["mech:raw_tin"] }] }
+    }
+  },
+  "requirements": [["has_tin_ore"]]
+}

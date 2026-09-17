@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "CA",
+    " F"
+  ],
+  "key": {
+    "F": {"item": "mech:bronze_rod"},
+    "A": {"tag": "mech:files"},
+    "C": {"tag": "mech:hammers"}
+  },
+  "result": {
+    "item": "mech:bronze_ring",
+    "count": 1
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " F ",
+    "SFS",
+    "SSS"
+  ],
+  "key": {
+    "F": {"item": "minecraft:iron_ingot"},
+    "S": {"item": "minecraft:stone"}
+  },
+  "result": {
+    "item": "mech:iron_mortar",
+    "count": 1
+  }
+}

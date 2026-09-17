@@ -1,0 +1,22 @@
+{
+  "parent": "block/block",
+  "textures": {
+    "0": "mech:block/castilla_log_tapped",
+    "particle": "mech:block/castilla_log_tapped"
+  },
+  "elements": [
+    {
+      "from": [0, 0, -0.001],
+      "to": [16, 16, -0.001],
+      "rotation": {"angle": 0, "axis": "z", "origin": [8, 8, 0]},
+      "faces": {
+        "north": {"uv": [0, 0, 16, 16], "rotation": 270, "texture": "#0"},
+        "east": {"uv": [0, 0, 16, 0], "rotation": 90, "texture": "#0"},
+        "south": {"uv": [0, 0, 16, 16], "rotation": 90, "texture": "#0"},
+        "west": {"uv": [0, 2, 16, 2], "rotation": 90, "texture": "#0"},
+        "up": {"uv": [0, 0, 0, 16], "rotation": 90, "texture": "#0"},
+        "down": {"uv": [2, 0, 2, 16], "rotation": 90, "texture": "#0"}
+      }
+    }
+  ]
+}

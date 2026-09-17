@@ -1,0 +1,8 @@
+{
+  "parent": "block/orientable",
+  "textures": {
+    "top": "mech:block/upgraded_steam_furnace_side",
+    "front": "mech:block/upgraded_steam_furnace_front",
+    "side": "mech:block/upgraded_steam_furnace_side"
+  }
+}

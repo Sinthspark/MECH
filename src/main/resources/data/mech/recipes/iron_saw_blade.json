@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "PP",
+    "HF"
+  ],
+  "key": {
+    "P": {"item": "mech:iron_plate"},
+    "H": {"tag": "mech:hammers"},
+    "F": {"tag": "mech:files"}
+  },
+  "result": {
+    "item": "mech:iron_saw_blade",
+    "count": 1
+  }
+}

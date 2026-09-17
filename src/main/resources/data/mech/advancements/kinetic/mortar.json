@@ -1,0 +1,35 @@
+{
+  "display": {
+    "icon": {
+      "item": "mech:flint_mortar"
+    },
+    "title": {
+      "translate": "advancements.mech.kinetic.mortar.title"
+    },
+    "description": {
+      "translate": "advancements.mech.kinetic.mortar.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "mech:kinetic/alliance",
+  "criteria": {
+    "got_any_mortar": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "tag": "mech:mortars"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "got_any_mortar"
+    ]
+  ]
+}

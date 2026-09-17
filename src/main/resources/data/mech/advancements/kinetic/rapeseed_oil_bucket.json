@@ -1,0 +1,37 @@
+{
+  "display": {
+    "icon": {
+      "item": "mech:rapeseed_oil_bucket"
+    },
+    "title": {
+      "translate": "advancements.mech.kinetic.rapeseed_oil_bucket.title"
+    },
+    "description": {
+      "translate": "advancements.mech.kinetic.rapeseed_oil_bucket.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "mech:kinetic/oil_press",
+  "criteria": {
+    "has_oil_bucket": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "mech:rapeseed_oil_bucket"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_oil_bucket"
+    ]
+  ]
+}

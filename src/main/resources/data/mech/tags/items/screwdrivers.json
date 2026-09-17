@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "mech:iron_screwdriver",
+    "mech:golden_screwdriver",
+    "mech:copper_screwdriver",
+    "mech:tin_screwdriver",
+    "mech:bronze_screwdriver",
+    "mech:cast_iron_screwdriver",
+    "mech:steel_screwdriver"
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "display": {
+    "icon": {
+      "item": "mech:vulcanite_gear"
+    },
+    "title": {
+      "translate": "advancements.mech.root.title"
+    },
+    "description": {
+      "translate": "advancements.mech.root.description"
+    },
+    "background": "mech:textures/block/vulcanite_block.png",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "got_copper": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:raw_copper"
+            ]
+          }
+        ]
+      }
+    },
+    "got_tellurium": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "mech:raw_tellurium"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "got_copper",
+      "got_tellurium"
+    ]
+  ]
+}

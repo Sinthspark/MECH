@@ -1,0 +1,16 @@
+{
+  "display": {
+    "icon": { "item": "mech:limestone" },
+    "title": { "translate": "advancements.mech.kinetic.limestone.title" },
+    "description": { "translate": "advancements.mech.kinetic.limestone.description" },
+    "frame": "task", "show_toast": true, "announce_to_chat": true, "hidden": false
+  },
+  "parent": "mech:root",
+  "criteria": {
+    "has_limestone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": { "items": [{ "items": ["mech:limestone_chunk"] }] }
+    }
+  },
+  "requirements": [["has_limestone"]]
+}

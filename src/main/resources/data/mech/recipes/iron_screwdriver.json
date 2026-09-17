@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "HR",
+    "SF"
+  ],
+  "key": {
+    "R": {"item": "mech:iron_rod"},
+    "H": {"tag": "mech:hammers"},
+    "F": {"tag": "mech:files"},
+    "S": {"item": "minecraft:stick"}
+  },
+  "result": {
+    "item": "mech:iron_screwdriver",
+    "count": 1
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "CBG",
+    "CWG",
+    " G "
+  ],
+  "key": {
+    "C": {"item": "mech:clinker"},
+    "B": {"item": "minecraft:bucket"},
+    "W": {"item": "minecraft:water_bucket"},
+    "G": {"item": "mech:gypsum_powder"}
+  },
+  "result": {
+    "item": "mech:fluid_cement_bucket",
+    "count": 1
+  }
+}

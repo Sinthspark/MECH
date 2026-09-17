@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "CA",
+    " F"
+  ],
+  "key": {
+    "F": {"item": "mech:cast_iron_rod"},
+    "A": {"tag": "mech:files"},
+    "C": {"tag": "mech:hammers"}
+  },
+  "result": {
+    "item": "mech:cast_iron_ring",
+    "count": 1
+  }
+}

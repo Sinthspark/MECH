@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "mech:item/iron_wire_cutters"
+  }
+}

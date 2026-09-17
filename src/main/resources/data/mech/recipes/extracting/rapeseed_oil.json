@@ -1,0 +1,8 @@
+{
+  "type": "mech:extracting",
+  "ingredient": {"item": "mech:rapeseed_cleaned"},
+  "fluid": "mech:rapeseed_oil",
+  "fluidAmount": 50,
+  "steam": 8400,
+  "time": 1200
+}

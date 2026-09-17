@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "  A",
+    " F ",
+    "   "
+  ],
+  "key": {
+    "F": {"item": "mech:wooden_ring"},
+    "A": {"item": "mech:copper_saw_blade"}
+  },
+  "result": {
+    "item": "mech:copper_saw",
+    "count": 1
+  }
+}

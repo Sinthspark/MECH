@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SF",
+    "BA"
+  ],
+  "key": {
+    "F": {"item": "mech:copper_rod"},
+    "A": {"tag": "mech:files"},
+    "S": {"tag": "mech:hammers"},
+    "B": {"item": "minecraft:stick"}
+  },
+  "result": {
+    "item": "mech:copper_screwdriver",
+    "count": 1
+  }
+}

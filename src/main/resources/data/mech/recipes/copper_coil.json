@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " F ",
+    "AFB",
+    " F "
+  ],
+  "key": {
+    "F": {"item": "mech:copper_wire"},
+    "A": {"tag": "mech:files"},
+    "B": {"tag": "mech:hammers"}
+  },
+  "result": {
+    "item": "mech:copper_coil",
+    "count": 1
+  }
+}

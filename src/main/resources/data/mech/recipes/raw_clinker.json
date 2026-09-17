@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {"item": "mech:slaked_lime"},
+    {"item": "minecraft:clay_ball"}
+  ],
+  "result": {
+    "item": "mech:raw_clinker",
+    "count": 1
+  }
+}

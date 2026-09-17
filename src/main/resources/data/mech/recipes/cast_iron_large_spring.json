@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " F ",
+    " A ",
+    " F "
+  ],
+  "key": {
+    "F": {"item": "mech:cast_iron_spring"},
+    "A": {"tag": "mech:files"}
+  },
+  "result": {
+    "item": "mech:cast_iron_large_spring",
+    "count": 1
+  }
+}

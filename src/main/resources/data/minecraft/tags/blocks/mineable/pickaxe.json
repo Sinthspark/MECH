@@ -1,0 +1,14 @@
+{
+  "values": [
+    "mech:tin_ore",
+    "mech:deepslate_tin_ore",
+    "mech:tellurium_ore",
+    "mech:deepslate_tellurium_ore",
+    "mech:gypsum_stone",
+    "mech:limestone",
+    "mech:tin_block",
+    "mech:bronze_block",
+    "mech:tellurium_block",
+    "mech:vulcanite_block"
+  ]
+}

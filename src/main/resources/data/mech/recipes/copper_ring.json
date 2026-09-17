@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "FA",
+    " S"
+  ],
+  "key": {
+    "F": {"tag": "mech:hammers"},
+    "A": {"tag": "mech:files"},
+    "S": {"item": "mech:copper_rod"}
+  },
+  "result": {
+    "item": "mech:copper_ring",
+    "count": 1
+  }
+}

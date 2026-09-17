@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "FAF",
+    " S ",
+    "BCB"
+  ],
+  "key": {
+    "F": {"item": "mech:cast_iron_plate"},
+    "A": {"tag": "mech:files"},
+    "S": {"item": "mech:cast_iron_screw"},
+    "B": {"item": "mech:cast_iron_rod"},
+    "C": {"tag": "mech:screwdrivers"}
+  },
+  "result": {
+    "item": "mech:cast_iron_wire_cutters",
+    "count": 1
+  }
+}

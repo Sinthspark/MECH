@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    { "item": "mech:copper_dust" },
+    { "item": "mech:copper_dust" },
+    { "item": "mech:copper_dust" },
+    { "item": "mech:tin_dust" }
+  ],
+  "result": {
+    "item": "mech:bronze_dust",
+    "count": 3
+  }
+}
