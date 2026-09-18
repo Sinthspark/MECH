@@ -114,6 +114,9 @@ public class VulcaniteGearTile extends BlockEntity {
         this.rotationDirection = tag.getFloat("rotationDirection");
         this.lubricated = tag.getBoolean("lubricated");
         this.lubricantTimer = tag.getInt("lubricantTimer");
+        // ДИАГНОСТИКА: прилетела ли весточка на клиент?
+        System.out.println("[GearClient] handleUpdateTag isActive=" + isActive
+                + " perTick=" + perTick + " client=" + level.isClientSide);
     }
 
     @Override
