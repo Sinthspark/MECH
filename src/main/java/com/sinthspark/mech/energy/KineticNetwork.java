@@ -143,10 +143,16 @@ public class KineticNetwork {
         // Если sendBlockUpdated с одинаковым стейтом проглатывается — этот путь довезёт.
         if (level instanceof ServerLevel serverLevel) {
             var packet = be.getUpdatePacket();
-            if (packet != null) {
-                for (ServerPlayer player : serverLevel.players()) {
+            String status = (be instanceof com.sinthspark.mech.blockentity.VulcaniteGearTile gear)
+                    ? ("isActive=" + gear.isActive + " perTick=" + gear.perTick)
+                    : be.getClass().getSimpleName();
+            for (ServerPlayer player : serverLevel.players()) {
+                if (packet != null) {
                     player.connection.send(packet);
                 }
+                // Диагностика прямо в игру: action bar над хотбаром.
+                player.displayClientMessage(net.minecraft.network.chat.Component.literal(
+                        "[KNet] синк " + pos.toShortString() + " " + status), true);
             }
         }
     }
