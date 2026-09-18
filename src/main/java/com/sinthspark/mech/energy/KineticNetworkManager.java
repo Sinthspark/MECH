@@ -65,6 +65,7 @@ public class KineticNetworkManager {
             affected.add(oldNetwork);
         }
 
+        System.out.println("[KNetMgr] rebuildNetworkAt " + pos.toShortString());
         // Удаляем все затронутые сети
         Set<BlockPos> allComponents = new HashSet<>();
         for (KineticNetwork network : affected) {
@@ -211,6 +212,7 @@ public class KineticNetworkManager {
         Set<KineticNetwork> levelNetworks = networksByLevel.get(level);
         if (levelNetworks == null) return;
 
+        System.out.println("[KNetMgr] tick: networks=" + levelNetworks.size());
         for (KineticNetwork network : new ArrayList<>(levelNetworks)) {
             network.tick(level);
         }
