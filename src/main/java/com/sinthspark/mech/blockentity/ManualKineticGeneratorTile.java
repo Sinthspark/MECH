@@ -20,7 +20,6 @@ public class ManualKineticGeneratorTile extends BlockEntity {
     public boolean isActive = false;
     public boolean isBeingCranked = false;
     private int crankTimer = 0;
-    public boolean wasActivatedByPlayer = false;
 
     public ManualKineticGeneratorTile(BlockPos pos, BlockState state) {
         super(ModBlockEntities.MANUAL_KINETIC_GENERATOR.get(), pos, state);
@@ -29,7 +28,6 @@ public class ManualKineticGeneratorTile extends BlockEntity {
     public void startCranking() {
         System.out.println("[Generator] Крутят генератор!");
         this.isBeingCranked = true;
-        this.wasActivatedByPlayer = true;
         setChanged();
     }
 

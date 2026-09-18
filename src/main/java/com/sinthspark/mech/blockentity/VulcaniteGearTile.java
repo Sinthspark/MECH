@@ -22,7 +22,6 @@ public class VulcaniteGearTile extends BlockEntity {
     public static final float EFFICIENCY = 0.9f;
     public static final float FRICTION = 2.0f;
     public float inputPower = 0;
-    public boolean isDirectlyUnderGenerator = false;
 
     public boolean lubricated = false;
     public int lubricantTimer = 0;
@@ -41,6 +40,11 @@ public class VulcaniteGearTile extends BlockEntity {
         lubricated = true;
         lubricantTimer = 6000;
         setChanged();
+        // Синк клиенту: Jade HUD и будущий рендер читают lubricated с клиента.
+        if (level != null && !level.isClientSide) {
+            BlockState state = level.getBlockState(worldPosition);
+            level.sendBlockUpdated(worldPosition, state, state, 3);
+        }
     }
 
     public static <T extends BlockEntity> void tick(Level level, BlockPos pos, BlockState state, T be) {
@@ -62,27 +66,6 @@ public class VulcaniteGearTile extends BlockEntity {
         }
     }
 
-    public float getOutputPower(Level level, BlockPos pos) {
-        if (inputPower <= 0) return 0;
-        int outputs = Math.max(1, countOutputGears(level, pos));
-        float dividedPower = (float) Math.floor(inputPower / outputs);
-        return Math.max(0, dividedPower * EFFICIENCY - getFriction());
-    }
-
-    public float getSpeed() {
-        if (inputPower <= 0) return 0;
-        float friction = getFriction();
-        float numerator = 60 * inputPower;
-        float denominator = EFFICIENCY * MOMENT_OF_INERTIA * PI * friction;
-        if (denominator <= 0) return 0;
-        return (float) Math.sqrt(numerator / denominator);
-    }
-
-    public float getPerTick() {
-        return getSpeed() / 20.0f;
-    }
-
-    @Override
     protected void saveAdditional(@NotNull CompoundTag tag) {
         super.saveAdditional(tag);
         tag.putBoolean("isActive", isActive);
@@ -145,20 +128,7 @@ public class VulcaniteGearTile extends BlockEntity {
         return rotation;
     }
 
-    public int countOutputGears(Level level, BlockPos pos) {
-        int count = 0;
-        for (Direction dir : Direction.Plane.HORIZONTAL) {
-            BlockPos neighborPos = pos.relative(dir);
-            BlockEntity be = level.getBlockEntity(neighborPos);
-            if (be instanceof VulcaniteGearTile gear && gear.isActive) {
-                if (gear.inputPower < this.inputPower && gear.inputPower > 0) {
-                    count++;
-                }
-            }
-        }
-        return Math.max(1, count);
-    }
-
+    
     @Override
     public void onLoad() {
         super.onLoad();

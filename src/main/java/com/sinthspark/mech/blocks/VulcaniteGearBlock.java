@@ -88,6 +88,10 @@ public class VulcaniteGearBlock extends Block implements EntityBlock {
 
         if (heldItem.getItem() == FluidRegistry.RAPESEED_OIL.bucket.get()) {
             if (be instanceof VulcaniteGearTile gear) {
+                // Уже смазано с запасом — не тратим ведро впустую.
+                if (gear.lubricantTimer > 1200) {
+                    return InteractionResult.CONSUME;
+                }
                 gear.applyLubricant();
                 player.setItemInHand(hand, new ItemStack(Items.BUCKET));
                 return InteractionResult.SUCCESS;
