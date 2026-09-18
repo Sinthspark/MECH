@@ -36,38 +36,41 @@ public class KineticNetwork {
         }
 
         float powerPerConsumer = cachedTotalPower / Math.max(1, consumers.size());
-        // ⚔️ Арка X: скорость от РЕАЛЬНОЙ доли — кламп тугим потребителем.
-        // Кузнец поймал ошибку компиляции: потребители — BlockPos разных
-        // типов (Press/OilPress/Quern/Sawmill), а не список прессов~
-        float clampedPower = powerPerConsumer;
-        for (BlockPos consumerPos0 : consumers) {
-            var be0 = level.getBlockEntity(consumerPos0);
-            if (be0 instanceof PressTile p0) clampedPower = Math.min(clampedPower, p0.maxPower);
-            else if (be0 instanceof OilPressTile op0) clampedPower = Math.min(clampedPower, op0.maxPower);
+
+        // Единый источник правды: deliveredPower каждого потребителя считается
+        // ОДИН раз. Скорость сети определяется самым "тугим" потребителем,
+        // и все вращаются с одной скоростью — один вал, один RPM.
+        Map<BlockPos, Float> delivered = new HashMap<>();
+        float networkPower = powerPerConsumer;
+        for (BlockPos consumerPos : consumers) {
+            var be = level.getBlockEntity(consumerPos);
+            float d = powerPerConsumer;
+            if (be instanceof PressTile press) d = Math.min(d, press.maxPower);
+            else if (be instanceof OilPressTile oilPress) d = Math.min(d, oilPress.maxPower);
+            delivered.put(consumerPos, d);
+            networkPower = Math.min(networkPower, d);
         }
-        cachedSpeed = calculateSpeed(clampedPower);
+        cachedSpeed = calculateSpeed(networkPower);
         float perTick = cachedSpeed / 20.0f;
 
         for (BlockPos consumerPos : consumers) {
             var be = level.getBlockEntity(consumerPos);
+            float d = delivered.get(consumerPos);
             if (be instanceof PressTile press) {
-                float deliveredPower = Math.min(powerPerConsumer, press.maxPower);
-                press.inputPower = deliveredPower;
-                press.perTick = calculateSpeed(deliveredPower) / 20.0f;
-                press.leftActive = deliveredPower >= press.minPower;
-                press.rightActive = deliveredPower >= press.minPower;
+                press.inputPower = d;
+                press.perTick = perTick;
+                press.leftActive = d >= press.minPower;
+                press.rightActive = d >= press.minPower;
             } else if (be instanceof OilPressTile oilPress) {
-                float deliveredPower = Math.min(powerPerConsumer, oilPress.maxPower);
-                oilPress.inputPower = deliveredPower;
-                oilPress.perTick = calculateSpeed(deliveredPower) / 20.0f;
+                oilPress.inputPower = d;
+                oilPress.perTick = perTick;
             } else if (be instanceof QuernTile quern) {
-                quern.inputPower = powerPerConsumer;
+                quern.inputPower = d;
                 quern.perTick = perTick;
             } else if (be instanceof SawmillTile sawmill) {
-                sawmill.inputPower = powerPerConsumer;
+                sawmill.inputPower = d;
                 sawmill.perTick = perTick;
             }
-            // ⚔️ Арка XIII: потребители тоже шлют весточку клиенту
             syncToClient(level, consumerPos);
         }
 
@@ -114,10 +117,12 @@ public class KineticNetwork {
     }
 
 
-    // ⚔️ Арка XIII: «Забытое послание» — БАГФИКС.
-    // Сеть будила шестерни и потребителей на сервере, но не слала пакет
-    // клиенту — tile.isActive оставался false на клиенте, и шестерня
-    // визуально не крутилась (генератор синкал сам, поэтому крутился один).
+    // Синхронизация сервер -> клиент.
+    // Работает при ОДИНАКОВОМ BlockState, потому что в Forge 1.20.1 пакет
+    // данных BlockEntity уходит через BlockEntity.getUpdatePacket()
+    // независимо от равенства стейтов. Все тайлы сети реализуют цепочку:
+    // getUpdatePacket -> getUpdateTag (isActive, perTick) -> handleUpdateTag.
+    // Если какой-то тайл потеряет эту цепочку — синк молча сломается.
     private void syncToClient(Level level, BlockPos pos) {
         var be = level.getBlockEntity(pos);
         if (be != null) be.setChanged();
@@ -148,7 +153,10 @@ public class KineticNetwork {
                 sawmill.inputPower = 0; sawmill.perTick = 0;
             }
         }
-        for (BlockPos pos : components) syncToClient(level, pos);
+        // Синкаем только то, что реально меняли: передатчики и потребители.
+        // Источники (колесо, генератор) в этом методе не трогаем.
+        for (BlockPos pos : transmitters) syncToClient(level, pos);
+        for (BlockPos pos : consumers) syncToClient(level, pos);
     }
 
     public void tick(Level level) { if (needsRecalculation) redistribute(level); }
