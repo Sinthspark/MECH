@@ -2,6 +2,8 @@ package com.sinthspark.mech.energy;
 
 import com.sinthspark.mech.blockentity.*;
 import net.minecraft.core.BlockPos;
+import net.minecraft.server.level.ServerLevel;
+import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.state.BlockState;
 
@@ -133,9 +135,20 @@ public class KineticNetwork {
         var be = level.getBlockEntity(pos);
         System.out.println("[KNet] syncToClient " + pos.toShortString()
                 + " be=" + (be == null ? "NULL!" : be.getClass().getSimpleName()));
-        if (be != null) be.setChanged();
+        if (be == null) return;
+        be.setChanged();
         BlockState state = level.getBlockState(pos);
         level.sendBlockUpdated(pos, state, state, 3);
+        // Страховка: прямая рассылка пакета всем игрокам измерения.
+        // Если sendBlockUpdated с одинаковым стейтом проглатывается — этот путь довезёт.
+        if (level instanceof ServerLevel serverLevel) {
+            var packet = be.getUpdatePacket();
+            if (packet != null) {
+                for (ServerPlayer player : serverLevel.players()) {
+                    player.connection.send(packet);
+                }
+            }
+        }
     }
 
     private float calculateSpeed(float power) {
