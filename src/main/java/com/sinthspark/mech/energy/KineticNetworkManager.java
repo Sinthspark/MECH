@@ -1,6 +1,7 @@
 package com.sinthspark.mech.energy;
 
 import com.sinthspark.mech.blockentity.*;
+import com.mojang.logging.LogUtils;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.world.level.Level;
@@ -18,6 +19,7 @@ import java.util.*;
  * у каждого мира своя полка. (◠‿◠✿)
  */
 public class KineticNetworkManager {
+    private static final org.slf4j.Logger LOGGER = LogUtils.getLogger();
 
     private static final Map<String, KineticNetwork> posToNetwork = new HashMap<>();
     // ⚔️ Арка IX: per-level хранилище — сети одного мира не тикают в другом
@@ -65,7 +67,7 @@ public class KineticNetworkManager {
             affected.add(oldNetwork);
         }
 
-        System.out.println("[KNetMgr] rebuildNetworkAt " + pos.toShortString());
+        LOGGER.info("[KNetMgr] rebuildNetworkAt " + pos.toShortString());
         // Удаляем все затронутые сети
         Set<BlockPos> allComponents = new HashSet<>();
         for (KineticNetwork network : affected) {
@@ -212,7 +214,7 @@ public class KineticNetworkManager {
         Set<KineticNetwork> levelNetworks = networksByLevel.get(level);
         if (levelNetworks == null) return;
 
-        System.out.println("[KNetMgr] tick: networks=" + levelNetworks.size());
+        LOGGER.info("[KNetMgr] tick: networks=" + levelNetworks.size());
         for (KineticNetwork network : new ArrayList<>(levelNetworks)) {
             network.tick(level);
         }

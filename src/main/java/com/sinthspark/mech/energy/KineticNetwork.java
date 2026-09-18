@@ -2,6 +2,7 @@ package com.sinthspark.mech.energy;
 
 import com.sinthspark.mech.blockentity.*;
 import net.minecraft.core.BlockPos;
+import com.mojang.logging.LogUtils;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.level.Level;
@@ -10,6 +11,7 @@ import net.minecraft.world.level.block.state.BlockState;
 import java.util.*;
 
 public class KineticNetwork {
+    private static final org.slf4j.Logger LOGGER = LogUtils.getLogger();
     private final Set<BlockPos> components = new HashSet<>();
     private final Set<BlockPos> sources = new HashSet<>();
     private final Set<BlockPos> consumers = new HashSet<>();
@@ -92,7 +94,7 @@ public class KineticNetwork {
             // не крутится визуально, хотя на сервере жива
             syncToClient(level, transmitterPos);
         }
-        System.out.println("[KNet] redistribute: power=" + cachedTotalPower
+        LOGGER.info("[KNet] redistribute: power=" + cachedTotalPower
                 + " speed=" + cachedSpeed + " perTick=" + perTick
                 + " transmitters=" + transmitters.size());
         needsRecalculation = false;
@@ -119,7 +121,7 @@ public class KineticNetwork {
             else if (be instanceof VulcaniteBearingTile) transmitters.add(pos);
         }
         dirty = false;
-        System.out.println("[KNet] updateCache: sources=" + sources.size()
+        LOGGER.info("[KNet] updateCache: sources=" + sources.size()
                 + " transmitters=" + transmitters.size() + " consumers=" + consumers.size()
                 + " totalPower=" + cachedTotalPower);
     }
@@ -133,7 +135,7 @@ public class KineticNetwork {
     // Если какой-то тайл потеряет эту цепочку — синк молча сломается.
     private void syncToClient(Level level, BlockPos pos) {
         var be = level.getBlockEntity(pos);
-        System.out.println("[KNet] syncToClient " + pos.toShortString()
+        LOGGER.info("[KNet] syncToClient " + pos.toShortString()
                 + " be=" + (be == null ? "NULL!" : be.getClass().getSimpleName()));
         if (be == null) return;
         be.setChanged();

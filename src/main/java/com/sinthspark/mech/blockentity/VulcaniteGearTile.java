@@ -12,9 +12,11 @@ import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
 import org.jetbrains.annotations.NotNull;
 
-public class VulcaniteGearTile extends BlockEntity {
+public class VulcaniteGearTile {
+    private static final org.slf4j.Logger LOGGER = com.mojang.logging.LogUtils.getLogger();
     public float rotationDirection = 1.0f;
     public float rotation = 0;
+    private int rotationLogCounter = 0;
     public float perTick = 5;
     public static final float MOMENT_OF_INERTIA = 0.5f;
     public static final float PI = 3.14159f;
@@ -53,6 +55,9 @@ public class VulcaniteGearTile extends BlockEntity {
         if (level.isClientSide) {
             if (tile.isActive) {
                 tile.rotation = (tile.rotation + tile.perTick) % 360;
+                if (tile.rotationLogCounter++ % 20 == 0) {
+                    LOGGER.info("[GearClient] tick: rotation={} perTick={} isActive={}", tile.rotation, tile.perTick, tile.isActive);
+                }
             }
             return;
         }
@@ -107,6 +112,8 @@ public class VulcaniteGearTile extends BlockEntity {
 
     @Override
     public void handleUpdateTag(CompoundTag tag) {
+        LOGGER.info("[GearClient] handleUpdateTag isActive={} perTick={} client={}",
+                tag.getBoolean("isActive"), tag.getFloat("perTick"), level == null ? "null" : level.isClientSide());
         super.handleUpdateTag(tag);
         this.isActive = tag.getBoolean("isActive");
         this.perTick = tag.getFloat("perTick");
@@ -114,9 +121,6 @@ public class VulcaniteGearTile extends BlockEntity {
         this.rotationDirection = tag.getFloat("rotationDirection");
         this.lubricated = tag.getBoolean("lubricated");
         this.lubricantTimer = tag.getInt("lubricantTimer");
-        // ДИАГНОСТИКА: прилетела ли весточка на клиент?
-        System.out.println("[GearClient] handleUpdateTag isActive=" + isActive
-                + " perTick=" + perTick + " client=" + level.isClientSide);
     }
 
     @Override
