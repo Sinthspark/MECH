@@ -90,6 +90,9 @@ public class KineticNetwork {
             // не крутится визуально, хотя на сервере жива
             syncToClient(level, transmitterPos);
         }
+        System.out.println("[KNet] redistribute: power=" + cachedTotalPower
+                + " speed=" + cachedSpeed + " perTick=" + perTick
+                + " transmitters=" + transmitters.size());
         needsRecalculation = false;
     }
 
@@ -114,6 +117,9 @@ public class KineticNetwork {
             else if (be instanceof VulcaniteBearingTile) transmitters.add(pos);
         }
         dirty = false;
+        System.out.println("[KNet] updateCache: sources=" + sources.size()
+                + " transmitters=" + transmitters.size() + " consumers=" + consumers.size()
+                + " totalPower=" + cachedTotalPower);
     }
 
 
@@ -125,6 +131,8 @@ public class KineticNetwork {
     // Если какой-то тайл потеряет эту цепочку — синк молча сломается.
     private void syncToClient(Level level, BlockPos pos) {
         var be = level.getBlockEntity(pos);
+        System.out.println("[KNet] syncToClient " + pos.toShortString()
+                + " be=" + (be == null ? "NULL!" : be.getClass().getSimpleName()));
         if (be != null) be.setChanged();
         BlockState state = level.getBlockState(pos);
         level.sendBlockUpdated(pos, state, state, 3);
