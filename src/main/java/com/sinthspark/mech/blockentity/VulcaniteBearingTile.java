@@ -101,12 +101,6 @@ public class VulcaniteBearingTile extends BlockEntity {
         this.outputPower = tag.getFloat("outputPower");
         this.lubricated = tag.getBoolean("lubricated");
         this.lubricantTimer = tag.getInt("lubricantTimer");
-
-        // Сбрасываем активность при загрузке
-        this.isActive = false;
-        this.inputPower = 0;
-        this.outputPower = 0;
-        this.perTick = 0;
     }
 
     @Override

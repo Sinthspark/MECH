@@ -36,6 +36,21 @@ public class VulcaniteGearTile extends BlockEntity {
         return FRICTION;
     }
 
+    /**
+     * n = sqrt(60 × P_ш × F_тр_ш / (k_ш × J × π))
+     * Обратная формула к "Мощность шестерни" из доки — проверено алгебраически,
+     * P(n) и n(P) — точная пара. F_тр берём через getFriction(), чтобы смазка
+     * реально влияла на обороты, а не только красиво лежала в NBT.
+     */
+    public float getSpeed() {
+        if (inputPower <= 0) return 0;
+        float friction = getFriction();
+        float numerator = 60 * inputPower * friction;
+        float denominator = EFFICIENCY * MOMENT_OF_INERTIA * PI;
+        if (denominator <= 0) return 0;
+        return (float) Math.sqrt(numerator / denominator);
+    }
+
     public void applyLubricant() {
         lubricated = true;
         lubricantTimer = 6000;
@@ -52,7 +67,7 @@ public class VulcaniteGearTile extends BlockEntity {
 
         if (level.isClientSide) {
             if (tile.isActive) {
-                tile.rotation = (tile.rotation + tile.perTick) % 360;
+                tile.rotation = (tile.rotation + tile.perTick * tile.rotationDirection + 360) % 360;
             }
             return;
         }
@@ -114,9 +129,6 @@ public class VulcaniteGearTile extends BlockEntity {
         this.rotationDirection = tag.getFloat("rotationDirection");
         this.lubricated = tag.getBoolean("lubricated");
         this.lubricantTimer = tag.getInt("lubricantTimer");
-        // ДИАГНОСТИКА: прилетела ли весточка на клиент?
-        System.out.println("[GearClient] handleUpdateTag isActive=" + isActive
-                + " perTick=" + perTick + " client=" + level.isClientSide);
     }
 
     @Override
@@ -126,12 +138,12 @@ public class VulcaniteGearTile extends BlockEntity {
 
     public float getRotation(float partialTick) {
         if (isActive) {
-            return (rotation + partialTick * perTick) % 360;
+            return (rotation + partialTick * perTick * rotationDirection + 360) % 360;
         }
         return rotation;
     }
 
-    
+
     @Override
     public void onLoad() {
         super.onLoad();

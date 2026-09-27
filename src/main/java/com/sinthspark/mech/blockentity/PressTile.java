@@ -40,6 +40,24 @@ public class PressTile extends BlockEntity implements MenuProvider {
     public boolean rightActive = false;
     public boolean lubricated = false;
     public int lubricantTimer = 0;
+    public static final float LUBRICANT_REDUCTION = 0.3f;
+
+    public float getFriction() {
+        if (lubricated) return PRESS_FRICTION * (1 - LUBRICANT_REDUCTION);
+        return PRESS_FRICTION;
+    }
+
+    // n = sqrt(60×inputPower / (PRESS_EFFICIENCY×0.5×π×friction)) — тот же
+    // паттерн, что уже был у жерновов/лесопилки/маслопресса, просто у пресса
+    // его почему-то забыли дописать.
+    public float getSpeed() {
+        if (inputPower <= 0) return 0;
+        float friction = getFriction();
+        float numerator = 60 * inputPower;
+        float denominator = PRESS_EFFICIENCY * 0.5f * 3.14159f * friction;
+        if (denominator <= 0) return 0;
+        return (float) Math.sqrt(numerator / denominator);
+    }
 
     public final ItemStackHandler itemHandler = new ItemStackHandler(2) {
         @Override

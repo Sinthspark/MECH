@@ -102,9 +102,9 @@ public class ManualKineticGeneratorTile extends BlockEntity {
     @Override
     public void load(@NotNull CompoundTag tag) {
         super.load(tag);
-        this.isActive = false; // Всегда сбрасываем при загрузке
-        this.perTick = 0;
-        this.crankTimer = 0;
+        this.isActive = tag.getBoolean("isActive");
+        this.perTick = tag.getFloat("perTick");
+        this.crankTimer = tag.getInt("crankTimer");
     }
 
     @Override
@@ -112,6 +112,7 @@ public class ManualKineticGeneratorTile extends BlockEntity {
         CompoundTag tag = super.getUpdateTag();
         tag.putBoolean("isActive", isActive);
         tag.putFloat("perTick", perTick);
+        tag.putInt("crankTimer", crankTimer);
         return tag;
     }
 
@@ -120,6 +121,7 @@ public class ManualKineticGeneratorTile extends BlockEntity {
         super.handleUpdateTag(tag);
         this.isActive = tag.getBoolean("isActive");
         this.perTick = tag.getFloat("perTick");
+        this.crankTimer = tag.getInt("crankTimer");
     }
 
     @Override

@@ -65,7 +65,6 @@ public class KineticNetworkManager {
             affected.add(oldNetwork);
         }
 
-        System.out.println("[KNetMgr] rebuildNetworkAt " + pos.toShortString());
         // Удаляем все затронутые сети
         Set<BlockPos> allComponents = new HashSet<>();
         for (KineticNetwork network : affected) {
@@ -148,7 +147,9 @@ public class KineticNetworkManager {
                 be instanceof SawmillTile;
     }
 
-    private static boolean isConnected(Level level, BlockPos from, BlockPos to, Direction dir) {
+    // Пакетная видимость (не private) — KineticNetwork.redistribute() переиспользует
+    // эти же правила соединений для обхода графа при расчёте m/a.
+    static boolean isConnected(Level level, BlockPos from, BlockPos to, Direction dir) {
         var fromBe = level.getBlockEntity(from);
         var toBe = level.getBlockEntity(to);
 
@@ -212,7 +213,6 @@ public class KineticNetworkManager {
         Set<KineticNetwork> levelNetworks = networksByLevel.get(level);
         if (levelNetworks == null) return;
 
-        System.out.println("[KNetMgr] tick: networks=" + levelNetworks.size());
         for (KineticNetwork network : new ArrayList<>(levelNetworks)) {
             network.tick(level);
         }
