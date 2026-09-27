@@ -108,7 +108,7 @@ public class KineticNetwork {
                 // Флип направления только на зацеплении шестерня-шестерня —
                 // это единственное реальное меш-соединение в системе.
                 // Подшипник — вал, а не зубчатая пара, направление сквозь
-                // него передаётся без изменений
+                // него передаётся без изменений.
                 boolean isGearMesh = posBe instanceof VulcaniteGearTile && nbe instanceof VulcaniteGearTile;
                 float nextDir = isGearMesh ? -dirHere : dirHere;
                 direction.put(n, nextDir);
