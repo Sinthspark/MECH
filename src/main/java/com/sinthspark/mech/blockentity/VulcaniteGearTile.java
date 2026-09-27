@@ -2,7 +2,6 @@ package com.sinthspark.mech.blockentity;
 
 import com.sinthspark.mech.energy.KineticNetworkManager;
 import net.minecraft.core.BlockPos;
-import net.minecraft.core.Direction;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.protocol.Packet;
 import net.minecraft.network.protocol.game.ClientGamePacketListener;
@@ -85,12 +84,6 @@ public class VulcaniteGearTile extends BlockEntity {
         this.rotationDirection = tag.getFloat("rotationDirection");
         this.lubricated = tag.getBoolean("lubricated");
         this.lubricantTimer = tag.getInt("lubricantTimer");
-
-        // Сбрасываем активность при загрузке
-        // Сеть пересчитает при следующем тике
-        this.isActive = false;
-        this.inputPower = 0;
-        this.perTick = 0;
     }
 
     @Override
@@ -114,9 +107,6 @@ public class VulcaniteGearTile extends BlockEntity {
         this.rotationDirection = tag.getFloat("rotationDirection");
         this.lubricated = tag.getBoolean("lubricated");
         this.lubricantTimer = tag.getInt("lubricantTimer");
-        // ДИАГНОСТИКА: прилетела ли весточка на клиент?
-        System.out.println("[GearClient] handleUpdateTag isActive=" + isActive
-                + " perTick=" + perTick + " client=" + level.isClientSide);
     }
 
     @Override
@@ -131,7 +121,7 @@ public class VulcaniteGearTile extends BlockEntity {
         return rotation;
     }
 
-    
+
     @Override
     public void onLoad() {
         super.onLoad();

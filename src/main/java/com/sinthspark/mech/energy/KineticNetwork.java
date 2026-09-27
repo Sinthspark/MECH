@@ -39,9 +39,6 @@ public class KineticNetwork {
 
         float powerPerConsumer = cachedTotalPower / Math.max(1, consumers.size());
 
-        // Единый источник правды: deliveredPower каждого потребителя считается
-        // ОДИН раз. Скорость сети определяется самым "тугим" потребителем,
-        // и все вращаются с одной скоростью — один вал, один RPM.
         Map<BlockPos, Float> delivered = new HashMap<>();
         float networkPower = powerPerConsumer;
         for (BlockPos consumerPos : consumers) {
@@ -88,13 +85,8 @@ public class KineticNetwork {
                 bearing.perTick = perTick;
                 bearing.isActive = true;
             }
-            // ⚔️ Арка XIII: шлём весточку клиенту — без неё шестерня
-            // не крутится визуально, хотя на сервере жива
             syncToClient(level, transmitterPos);
         }
-        System.out.println("[KNet] redistribute: power=" + cachedTotalPower
-                + " speed=" + cachedSpeed + " perTick=" + perTick
-                + " transmitters=" + transmitters.size());
         needsRecalculation = false;
     }
 
@@ -124,37 +116,12 @@ public class KineticNetwork {
                 + " totalPower=" + cachedTotalPower);
     }
 
-
-    // Синхронизация сервер -> клиент.
-    // Работает при ОДИНАКОВОМ BlockState, потому что в Forge 1.20.1 пакет
-    // данных BlockEntity уходит через BlockEntity.getUpdatePacket()
-    // независимо от равенства стейтов. Все тайлы сети реализуют цепочку:
-    // getUpdatePacket -> getUpdateTag (isActive, perTick) -> handleUpdateTag.
-    // Если какой-то тайл потеряет эту цепочку — синк молча сломается.
-    private void syncToClient(Level level, BlockPos pos) {
+    private static void syncToClient(Level level, BlockPos pos) {
         var be = level.getBlockEntity(pos);
-        System.out.println("[KNet] syncToClient " + pos.toShortString()
-                + " be=" + (be == null ? "NULL!" : be.getClass().getSimpleName()));
         if (be == null) return;
         be.setChanged();
         BlockState state = level.getBlockState(pos);
-        level.sendBlockUpdated(pos, state, state, 3);
-        // Страховка: прямая рассылка пакета всем игрокам измерения.
-        // Если sendBlockUpdated с одинаковым стейтом проглатывается — этот путь довезёт.
-        if (level instanceof ServerLevel serverLevel) {
-            var packet = be.getUpdatePacket();
-            String status = (be instanceof com.sinthspark.mech.blockentity.VulcaniteGearTile gear)
-                    ? ("isActive=" + gear.isActive + " perTick=" + gear.perTick)
-                    : be.getClass().getSimpleName();
-            for (ServerPlayer player : serverLevel.players()) {
-                if (packet != null) {
-                    player.connection.send(packet);
-                }
-                // Диагностика прямо в игру: action bar над хотбаром.
-                player.displayClientMessage(net.minecraft.network.chat.Component.literal(
-                        "[KNet] синк " + pos.toShortString() + " " + status), true);
-            }
-        }
+        level.sendBlockUpdated(pos, state, state, 3);  // ← этого достаточно
     }
 
     private float calculateSpeed(float power) {
